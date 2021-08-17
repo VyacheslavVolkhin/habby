@@ -84,8 +84,7 @@ video {
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  /*font-family: 'Segoe UI';*/
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Segoe UI';
 }
 /* HTML5 display-role reset for older browsers */
 body {
@@ -163,8 +162,7 @@ button,
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
-    /*font-family: 'Segoe UI';*/
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI';
     -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s;
     text-decoration: none;
@@ -189,8 +187,7 @@ textarea {
   display: block;
   width: 100%;
   outline: none;
-  /*font-family: 'Segoe UI';*/
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Segoe UI';
   -webkit-appearance: none;
 }
 select::-ms-clear,
