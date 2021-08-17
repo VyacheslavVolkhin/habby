@@ -1,8 +1,9 @@
 :root {
-	--clr-base: #000;
+	--clr-base: #543029;
 	--clr-att: #f00;
+    --clr-title: #5e514c;
 
-	--min: 320px;
+	--min: 480px;
 	--max: 1200px;
 
 	font-size: 10px;
@@ -13,12 +14,21 @@
 .elm-hidden {
 	display: none;
 }
+.fm {
+    font-family: 'Montserrat', sans-serif;
+}
+.fs {
+    font-family: 'Segoe UI', sans-serif;
+}
 /* ----------------------------------- *\
 			main styles
 \* ----------------------------------- */
 body {
-	color: var(--clr-base, #000);
+	color: var(--clr-base, #543029);
 	background: #fff;
+    font-size: 14px;
+    line-height: 22/18;
+    .lse(25);
 }
 p, ul, ol {
 	position: relative;
@@ -54,5 +64,56 @@ h3, .h3-title,
 h4, .h4-title,
 h5, .h5-title,
 h6, .h6-title {
-
+	display: block;
+	position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--clr-title);
+    margin: 1em 0 1em 0;
+    line-height: 29/24;
+    .fm;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+.h1-title, h1 {
+    font-size: 24px;
+    &.title-large {
+        font-size: 36px;
+    }
+}
+.title-decor {
+    padding: 2.4em 0 2.4em 0;
+    &:after, &:before {
+        content: "";
+        display: block;
+        width: 177px;
+        height: 18px;
+        background: #e7c794;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -89px;
+    }
+    &:before {
+        top: auto;
+        bottom: 0;
+    }
+}
+@media (min-width: 1024px) {
+    .h1-title, h1 {
+        font-size: 40px;
+        &.title-large {
+            font-size: 40px;
+        }
+    }
+    .title-decor {
+        padding-top: 0.9em;
+        padding-bottom: 0.7em;
+        &:after, &:before {
+            height: 12px;
+            width: 118px;
+            margin-left: -59px;
+        }
+    }
 }

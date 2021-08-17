@@ -100,5 +100,74 @@ $(document).ready(function(){
 			$(this).addClass('active').next('.js-tab-content').slideDown(200);
 		}
 	})
+
+    //btn tgl
+    $('.js-btn-tgl').on('click', function () {
+        $(this).toggleClass('active');
+        return false;
+    })
+
+
+    //mobile menu
+    $('.main-menu-wrap li ul').each(function () {
+        $(this).parent().addClass('submenu');
+    })
+    $('.main-menu-wrap li a').on('click', function () {
+        if ($(this).next('ul').length > 0) {
+            if ($(window).innerWidth() < 1024) {
+                if ($(this).parent().hasClass('open')) {
+                    $(this).parent().removeClass('open').children('ul').slideUp(200);
+                } else {
+                    $('.main-menu-wrap li.open').removeClass('open').children('ul').slideUp(200);
+                    $(this).parent().addClass('open').children('ul').slideDown(200);
+                }
+                return false;
+            }
+        }
+    })
+
+
+    //main-slider-box
+    $('.main-slider-box .slider').slick({
+        dots: true,
+        slidesToShow: 1,
+        variableWidth: false,
+        prevArrow: '<span class="btn-action-ico ico-arrow ico-arrow-prev"></span>',
+        nextArrow: '<span class="btn-action-ico ico-arrow ico-arrow-next"></span>',
+    });
+
+
+    //clients-box
+    $('.clients-box .slider').slick({
+        dots: false,
+        slidesToShow: 3,
+        variableWidth: false,
+        prevArrow: '<span class="btn-action-ico ico-arrow ico-arrow-prev"></span>',
+        nextArrow: '<span class="btn-action-ico ico-arrow ico-arrow-next"></span>',
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 3,
+                    infinite: true,
+                    variableWidth: false,
+                    dots: true,
+                    prevArrow: false,
+                    nextArrow: false
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: false,
+                    variableWidth: false,
+                    dots: false,
+                    prevArrow: false,
+                    nextArrow: false
+                }
+            },
+        ]
+    });
 	
 });

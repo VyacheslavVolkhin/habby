@@ -1,7 +1,455 @@
 /* ----------------------------------- *\
-			items styles
-\* ----------------------------------- */
-
-/* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.gallery-soc-box {
+    padding-top: 62px;
+    .items-wrap {
+        margin: 0 -25px;
+    }
+    .item-wrap {
+        width: 50%;
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .main-title-box {
+        margin-bottom: 18px;
+    }
+    .item-photo {
+        &:before {
+            padding-top: 100%;
+        }
+    }
+}
+.about-box {
+    background: #f2e0c6;
+    font-size: 15px;
+    line-height: 18/15;
+    color: #5e514c;
+    position: relative;
+    padding: 30px 0 50px 0;
+    .about-inner-wrap {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    &:before, &:after {
+    	content: "";
+    	display: block;
+    	width: 9999px;
+    	position: absolute;
+    	top: 0;bottom: 0;left: 100%;
+    	background: #f2e0c6;
+    }
+    &:before {
+    	left: auto;right: 100%;
+    }
+    h1, h2, .h1-title {
+        text-align: center;
+        color: #b37542;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    p {
+        margin-bottom: 18px;
+    }
+}
+.tiles-box {
+    background: #f2e0c6;
+    position: relative;
+    padding: 45px 0 0 0;
+    &.bg-light {
+        background: #fff;
+        &:after, &:before {
+            background: #fff;
+        }
+    }
+    .main-title-box {
+        margin-bottom: 35px;
+    }
+    .items-wrap {
+        margin: 0 -33px 0px -33px;
+        z-index: 2;
+    }
+    .item-wrap {
+        padding: 0 13px;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &:before, &:after {
+    	content: "";
+    	display: block;
+    	width: 9999px;
+    	position: absolute;
+    	top: 0;bottom: 0;left: 100%;
+    	background: #f2e0c6;
+    }
+    &:before {
+    	left: auto;right: 100%;
+    }
+}
+.clients-box {
+    margin-bottom: 15px;
+    .ico-arrow {
+        position: absolute;
+        top: 50%;
+        left: -100px;
+        margin-top: -40px;
+    }
+    .ico-arrow-next {
+        left: auto;
+        right: -100px;
+    }
+    .slick-dots {
+        position: relative;
+        padding: 20px 0 0 0;
+    }
+}
+.catalog-box {
+    margin-bottom: 26px;
+    .items-wrap {
+        margin: 0 -10px;
+    }
+    .item-wrap {
+        padding: 0 10px;
+        margin-bottom: 17px;
+        width: 50%;
+    }
+    .more-box {
+        padding-top: 6px;
+    }
+}
+.more-box {
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+    .btn, button {
+        height: 77px;
+        padding: 0 24px;
+        font-size: 24px;
+        font-weight: 400;
+        min-width: 310px;
+    }
+}
+.main-title-box {
+    margin-bottom: 15px;
+    text-align: center;
+    .title-text {
+        display: block;
+        margin: 15px 0 0 0;
+        text-align: center;
+        font-size: 15px;
+        line-height: 18/15;
+        color: #5e514c;
+        font-weight: 600;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .title-wrap {
+        margin-bottom: 20px;
+        &+.title-text {
+            margin-top: -5px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .h1-title {
+        margin-bottom: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .tags-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 -20px;
+        flex-wrap: wrap;
+    }
+    .elm-tag {
+        margin: 0 20px;
+    }
+}
+.main-slider-box {
+    margin-bottom: 30px;
+    line-height: 0;
+    .sl-wrap {
+        display: block !important;
+        position: relative;
+        padding: 0;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .slider-wrap {
+        margin: 0;
+    }
+    .ico-arrow {
+        position: absolute;
+        top: 50%;
+        left: 44px;
+        margin-top: -40px;
+    }
+    .ico-arrow-next {
+        left: auto;
+        right: 44px;
+    }
+}
+@media (max-width: 1023px) {
+    .main-slider-box {
+        .btn-action-ico {
+            display: none !important;
+        }
+    }
+    .clients-box {
+        .slick-track, .slick-slide, .slick-list {
+            width: 100% !important;
+            transform: none !important;
+        }
+        .slick-slide {
+            margin-bottom: 60px;
+            float: none;
+        }
+        .main-title-box {
+            background: #f2e0c6;
+            position: relative;
+            margin: 0 -20px -90px -20px;
+            padding: 50px 0 115px 0;
+            .h1-title {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 274/24em;
+            }
+        }
+        .items-wrap {
+            z-index: 2;
+        }
+        .slider-wrap, .sl-wrap {
+            margin: 0;
+            padding: 0;
+        }
+        .more-box {
+            margin: -20px -20px 0 -20px;
+            padding: 36px 0;
+            background: #f2e0c6;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .clients-box {
+        .slider-wrap {
+            margin: 0 -10px;
+        }
+        .sl-wrap {
+            padding: 0 10px;
+        }
+        .slick-track {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .slick-slide {
+            width: 33.33% !important;
+        }
+        .main-title-box {
+            margin-bottom: 40px;
+        }
+        .item-client {
+            padding: 0;
+            .elm-user {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+@media (min-width: 640px) {
+    .gallery-soc-box {
+        .item-wrap {
+            width: 14.285%;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .catalog-box {
+        .item-wrap {
+            width: 33.33%;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .gallery-soc-box {
+        padding: 45px 0 54px 0;
+        .main-title-box {
+            margin-bottom: 40px;
+        }
+        .items-wrap {
+            margin: 0 -3px;
+        }
+        .item-wrap {
+            padding: 0 3px;
+            margin-bottom: 6px;
+        }
+    }
+    .about-box {
+        font-size: 24px;
+        padding: 54px 0 60px 0;
+        .about-inner-wrap {
+            padding: 0;
+        }
+        .h1-title, h1, h2 {
+            margin-bottom: 45px;
+        }
+        p {
+            margin-bottom: 28px;
+        }
+    }
+    .tiles-box {
+        padding: 80px 0 100px 0;
+        &.bg-light {
+            &:after {
+                display: none;
+            }
+            &:before {
+                left: -9999px;
+                right: -9999px;
+                background: url(../img/bg01.jpg) center bottom no-repeat;
+                background-size: auto 100%;
+                width: auto;
+            }
+        }
+        .items-wrap {
+            margin: 0 -13px;
+        }
+        .item-wrap {
+            margin-bottom: 30px;
+            width: 33.33%;
+            &:last-child {
+                margin-bottom: 30px;
+            }
+        }
+        .main-title-box {
+            margin-bottom: 62px;
+        }
+    }
+    .clients-box {
+        position: relative;
+        padding: 98px 0 77px 0;
+        background: #f2e0c6;
+        margin-bottom: 0;
+        .main-title-box {
+            margin-bottom: 65px;
+        }
+        .more-box {
+            margin-top: 42px;
+        }
+        .slick-track {
+            display: flex;
+            &:before, &:after {
+                display: none;
+            }
+            .slick-slide {
+                min-height: 100%;
+                float: none;
+                height: auto;
+                &>div {
+                    min-height: 100%;
+                    display: flex;
+                }
+            }
+            .sl-wrap {
+                display: block !important;
+                width: 100%;
+                min-height: 100%;
+                position: relative;
+                &:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    background: #fff;
+                    top: 0;
+                    bottom: 0;
+                    left: 15px;
+                    right: 15px;
+                }
+            }
+        }
+        &:before, &:after {
+        	content: "";
+        	display: block;
+        	width: 9999px;
+        	position: absolute;
+        	top: 0;bottom: 0;left: 100%;
+        	background: #f2e0c6;
+        }
+        &:before {
+        	left: auto;right: 100%;
+        }
+        .slider-wrap {
+            margin: 0 -15px;
+        }
+        .sl-wrap {
+            padding: 0 15px;
+        }
+        .item-client {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .catalog-box {
+        margin-bottom: 48px;
+        .items-wrap {
+            margin: 0 -13px;
+        }
+        .item-wrap {
+            margin-bottom: 33px;
+            padding: 0 13px;
+        }
+        .more-box {
+            padding-top: 14px;
+        }
+    }
+    .more-box {
+        .btn, button {
+            height: 51px;
+            font-size: 18px;
+            padding: 0 15px;
+            min-width: 206px;
+        }
+    }
+    .main-title-box {
+        margin-bottom: 22px;
+        .title-text {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        .tags-wrap {
+            margin-left: -26px;
+            margin-right: -26px;
+        }
+        .title-wrap {
+            margin-bottom: 45px;
+            &+.title-text {
+                margin-top: -32px;
+                padding-bottom: 30px;
+            }
+        }
+        .elm-tag {
+            margin: 0 26px 20px 26px;
+        }
+    }
+    .main-slider-box {
+        margin-bottom: 65px;
+        .slick-dots {
+            padding-bottom: 24px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .catalog-box {
+        .item-wrap {
+            width: 25%;
+        }
+    }
+}
