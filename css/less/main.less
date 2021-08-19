@@ -1,6 +1,6 @@
 :root {
 	--clr-base: #543029;
-	--clr-att: #f00;
+	--clr-att: #de0931;
     --clr-title: #5e514c;
 
 	--min: 480px;
@@ -32,6 +32,7 @@ body {
 }
 p, ul, ol {
 	position: relative;
+    margin-bottom: 21/18em;
 	img {
 		max-width: 100%;
 	}
@@ -45,10 +46,10 @@ li {
 }
 a {
 	text-decoration: none;
-	color: var(--clr-att, #f00);
+	color: var(--clr-att, #de0931);
 	&:hover {
 		text-decoration: none;
-		color: var(--clr-att, #f00);
+		color: var(--clr-att, #de0931);
 	}
 }
 a.link-main, .link-main {
@@ -58,6 +59,7 @@ a.link-main, .link-main {
 		border-bottom: none;
 	}
 }
+.page-title,
 h1, .h1-title,
 h2, .h2-title,
 h3, .h3-title,
@@ -76,8 +78,16 @@ h6, .h6-title {
         margin-top: 0;
     }
 }
+.page-title {
+    font-size: 36px;
+    color: var(--clr-base);
+    margin-bottom: 35px;
+    text-transform: none;
+    font-weight: 600;
+}
 .h1-title, h1 {
     font-size: 24px;
+    text-transform: uppercase;
     &.title-large {
         font-size: 36px;
     }
@@ -100,12 +110,23 @@ h6, .h6-title {
         bottom: 0;
     }
 }
+.text-att {
+    color: var(--clr-att);
+}
 @media (min-width: 1024px) {
     .h1-title, h1 {
         font-size: 40px;
         &.title-large {
             font-size: 40px;
         }
+    }
+    .page-title {
+        font-size: 24px;
+        color: #000000;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 30px;
+        text-transform: none;
     }
     .title-decor {
         padding-top: 0.9em;

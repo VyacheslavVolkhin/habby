@@ -1,6 +1,109 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+.item-cart {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 28/24;
+    color: #5e514c;
+    .cart-photo-wrap {
+        width: 232px;
+        padding: 0 46px 0 0;
+        display: block;
+        flex-shrink: 0;
+    }
+    .cart-info-wrap {
+        flex: 1;
+        display: block;
+    }
+    .cart-title-wrap {
+        margin-bottom: 28px;
+    }
+    .elm-image {
+        width: 100%;
+        height: 140px;
+        background: #fff;
+        img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    }
+    .cart-price-wrap {
+        font-size: 25px;
+    }
+    a {
+        color: #5e514c;
+    }
+    .elm-price {
+        display: inline;
+        vertical-align: baseline;
+    }
+}
+.item-order-total {
+    display: block;
+    position: relative;
+    .btn-order-toggle {
+        display: flex;
+        align-items: center;
+        position: relative;
+        min-height: 48px;
+        padding: 10px 30px 10px 60px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #000;
+        line-height: 1.1;
+        &:before {
+            content: "";
+            .i;.icon-arrow06;
+            position: absolute;
+            top: 50%;
+            left: 38px;
+            margin-top: -4px;
+        }
+    }
+    .order-block {
+        display: none;
+        padding: 20px 20px 32px 60px;
+    }
+    
+}
+.item-order-product {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    .product-title {
+        display: block;
+        margin: 0 0 25px 0;
+        a {
+            color: #000;
+            &:hover {
+                color: var(--clr-att);
+            }
+        }
+    }
+    .product-info-wrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 600;
+        flex-wrap: wrap;
+    }
+    .pr-price {
+        display: flex;
+        width: 265px;
+    }
+    .pr-count {
+        padding-right: 10px;
+    }
+    .elm-price {
+        margin: 0 10px 0 0;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
 .item-tile {
     display: block;
     position: relative;
@@ -323,10 +426,30 @@
     }
 }
 .elm-price {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     font-weight: 600;
     color: #665a55;
     white-space: nowrap;
+    &.price-new {
+        color: #de0931;
+    }
+    &.price-old {
+        color: #000000;
+        padding: 0 4px;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin-top: -1px;
+            background: #000;
+        }
+    }
 }
 .elm-tag {
     display: inline-block;
@@ -385,6 +508,55 @@
     }
 }
 @media (min-width: 1024px) {
+    .item-cart {
+        font-size: 16px;
+        line-height: 20/16;
+        .cart-photo-wrap {
+            width: 190px;
+            padding-right: 64px;
+        }
+        .cart-info-wrap {
+            display: flex;
+            align-items: center;
+        }
+        .cart-title-wrap {
+            margin: 0;
+            padding: 0 30px 0 0;
+            flex: 1;
+        }
+        .cart-price-wrap {
+            font-size: 16px;
+            min-width: 125px;
+            flex-shrink: 0;
+        }
+        .elm-image {
+            height: 92px;
+        }
+    }
+    .item-order-total {
+        .btn-order-toggle {
+            font-size: 18px;
+            padding-left: 44px;
+            &:before {
+                left: 22px;
+            }
+        }
+        .order-block {
+            padding-top: 5px;
+            padding-right: 0;
+        }
+    }
+    .item-order-product {
+        font-size: 16px;
+        font-weight: 300;
+        .product-title {
+            margin-bottom: 28px;
+        }
+        .pr-price {
+            width: auto;
+            padding-right: 10px;
+        }
+    }
     .item-tile {
         .elm-date {
             bottom: 17px;
@@ -502,6 +674,14 @@
         }
         &.rate-disabled {
             .icon-rate-disabled;
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .item-cart {
+        .cart-photo-wrap {
+            width: 150px;
+            padding-right: 24px;
         }
     }
 }

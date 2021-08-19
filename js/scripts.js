@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	//phone masked
-	$('input[type="tel"]').mask("+7 (999) 999-99-99",{placeholder:"+7 (___) ___-__-__"});
+	$('input[type="tel"]').mask("+38 (999) 999-99-99",{placeholder:"+38 (___) ___-__-__"});
 	$('input[type="tel"]').on('click', function() {
 		$(this).setCursorPosition(4);
 	})
@@ -106,6 +106,8 @@ $(document).ready(function(){
         $(this).toggleClass('active');
         return false;
     })
+    
+    
 
 
     //mobile menu
@@ -171,3 +173,45 @@ $(document).ready(function(){
     });
 	
 });
+window.onload = function () {
+    //field input
+    let fieldInput = document.querySelectorAll('.js-input');
+    if (fieldInput.length > 0) {
+        for (i = 0; i < fieldInput.length; i++) {
+            fieldInput[i].querySelector('label').onclick = function () {
+                this.parentElement.classList.add('inp-active');
+                this.parentElement.classList.remove('inp-valid');
+                this.parentElement.querySelector('input').focus();
+            }
+            //input
+            if (fieldInput[i].querySelector('input')) {
+                fieldInput[i].querySelector('input').onfocus = function () {
+                    this.parentElement.classList.add('inp-active');
+                    this.parentElement.classList.remove('inp-valid');
+                }
+                fieldInput[i].querySelector('input').onblur = function () {
+                    this.parentElement.classList.remove('inp-active');
+                    if (this.value.length == "0") {
+                        this.parentElement.classList.remove('inp-valid');
+                    } else {
+                        this.parentElement.classList.add('inp-valid');
+                    }
+                }
+                //select
+            } else if (fieldInput[i].querySelector('select')) {
+                fieldInput[i].querySelector('select').onchange = function () {
+                    this.parentElement.classList.add('inp-active');
+                    this.parentElement.classList.remove('inp-valid');
+                }
+                fieldInput[i].querySelector('select').onblur = function () {
+                    this.parentElement.classList.remove('inp-active');
+                    if (this.options[this.selectedIndex].text === "") {
+                        this.parentElement.classList.remove('inp-valid');
+                    } else {
+                        this.parentElement.classList.add('inp-valid');
+                    }
+                }
+            }
+        }
+    }
+}
