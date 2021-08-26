@@ -103,9 +103,49 @@ $(document).ready(function(){
 
     //btn tgl
     $('.js-btn-tgl').on('click', function () {
-        $(this).toggleClass('active');
+        $(this).toggleClass('active')
+            .find('.btn-action-ico').toggleClass('active');
         return false;
     })
+
+    //frm counter   
+    $('.js-counter .js-button-counter-minus').on('click', function () {
+        var cnt = $(this).parents('.js-counter').find('.js-input-counter').text();
+        cnt = parseInt(cnt);
+        if (cnt > 0) {
+            $(this).parents('.js-counter').find('.js-input-counter').text(cnt - 1);
+        }
+        return false;
+    })
+    $('.js-counter .js-button-counter-plus').on('click', function () {
+        var cnt = $(this).parents('.js-counter').find('.js-input-counter').text();
+        $(this).parents('.js-counter').find('.js-input-counter').text(cnt - 1 + 2);
+        return false;
+    })
+
+
+    //item-video
+    $('.js-btn-video').on('click', function () {
+        $(this).parents('.js-video').addClass('active');
+        return false;
+    })
+
+
+    //file input 
+    $('.js-field-file .js-file-button').on('click', function () {
+        $(this).parent().find('input').click();
+        return false;
+    })
+    $('input[type=file]').on('change', function () {
+        var fileName = ('' + $(this).val()).replace(/^.*[\ \/]/, '');
+        if (fileName.length > 150) {
+            fileName = fileName.substring(0, 150) + '...';
+        }
+        if (fileName == "") {
+            fileName = "Файл не обраний"
+        }
+        $('.js-field-file .js-file-caption').html(fileName);
+    });
     
     
 
@@ -171,7 +211,48 @@ $(document).ready(function(){
             },
         ]
     });
-	
+
+
+    //card slider
+    $('.photos-slider-box .slider-wrap .slider').slick({
+        dots: false,
+        slidesToShow: 1,
+        infinite: false,
+        prevArrow: false,
+        nextArrow: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true,
+                }
+            },
+        ]
+    });
+    $('.photos-slider-box .slider-preview-wrap .slider').slick({
+        dots: false,
+        slidesToShow: 5,
+        vertical: false,
+        infinite: false,
+        prevArrow: '<span class="btn-action-ico ico-arrow ico-arrow-prev"></span>',
+        nextArrow: '<span class="btn-action-ico ico-arrow ico-arrow-next"></span>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    //slidesToShow: 3,
+                }
+            },
+        ]
+    });
+    $('.photos-slider-box .slider-preview-wrap .slider .item-photo').click(function () {
+        let newSlide = $(this).attr('data-slide');
+        $('.photos-slider-box .slider-wrap .slider').slick('slickGoTo', newSlide);
+        return false;
+    })
+    
+    
 });
 window.onload = function () {
     //field input

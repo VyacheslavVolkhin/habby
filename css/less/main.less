@@ -88,9 +88,25 @@ h6, .h6-title {
 .h1-title, h1 {
     font-size: 24px;
     text-transform: uppercase;
+    &.title-main {
+        text-transform: none;
+        color: #543029;
+        text-align: center;
+    }
     &.title-large {
         font-size: 36px;
     }
+}
+.h2-title, h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.title-dark {
+    color: #000;
+}
+.title-center {
+    text-align: center;
 }
 .title-decor {
     padding: 2.4em 0 2.4em 0;
@@ -113,11 +129,56 @@ h6, .h6-title {
 .text-att {
     color: var(--clr-att);
 }
+.hr {
+    width: 100%;
+    display: block;
+    margin: 0 0 55px 0;
+    height: 2px;
+    background: #dddddd;
+    clear: both;
+    position: relative;
+    &:before, &:after {
+    	content: "";
+    	display: block;
+    	width: 9999px;
+    	position: absolute;
+    	top: 0;bottom: 0;left: 100%;
+    	background: #dddddd;
+    }
+    &:before {
+    	left: auto;right: 100%;
+    }
+}
+@media (max-width: 1023px) {
+    .h1-title, h1 {
+        &.title-mobile-large {
+            font-size: 40px;
+        }
+    }
+    .h2-title, h2 {
+        &.title-large {
+            font-size: 30px;
+        }
+    }
+    .title-mobile-center {
+        text-align: center;
+    }
+}
 @media (min-width: 1024px) {
     .h1-title, h1 {
         font-size: 40px;
+        &.title-main {
+            font-size: 24px;
+            text-align: left;
+        }
         &.title-large {
             font-size: 40px;
+        }
+    }
+    .h2-title, h2 {
+        font-size: 30px;
+        &.title-large {
+            font-size: 30px;
         }
     }
     .page-title {
