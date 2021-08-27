@@ -2,54 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c1e436-f245-4d66-b94e-65d1b59486dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_html/inner01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_html/inner02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_html/search-result01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_html/search-result02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_html/shop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/action.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icons/menu10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pic01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pic02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/shop10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/spr/arrow11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inner01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inner02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-result01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-result02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/common.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/common.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/content.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/content.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/items.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/items.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/main.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/structura.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/structura.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/spr.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/spr.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
