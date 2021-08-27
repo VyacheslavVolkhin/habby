@@ -44,6 +44,17 @@ p, ul, ol {
 li {
 	position: relative;
 }
+ol {
+    counter-reset: li; 
+    list-style: none;
+    li {
+    	position: relative;
+    	&:before {
+            counter-increment: li;
+            content: counters(li, ".") ". ";
+        }
+    }
+}
 a {
 	text-decoration: none;
 	color: var(--clr-att, #de0931);

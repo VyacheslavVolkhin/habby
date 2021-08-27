@@ -167,6 +167,20 @@ $(document).ready(function(){
             }
         }
     })
+    $('.popup-menu-box .menu-block li ul').each(function () {
+        $(this).parent().addClass('submenu');
+    })
+    $('.popup-menu-box .menu-block li a').on('click', function () {
+        if ($(this).next('ul').length > 0) {
+                if ($(this).parent().hasClass('open')) {
+                    $(this).parent().removeClass('open').children('ul').slideUp(200);
+                } else {
+                    $('.popup-menu-box .menu-block li.open').removeClass('open').children('ul').slideUp(200);
+                    $(this).parent().addClass('open').children('ul').slideDown(200);
+                }
+                return false;
+        }
+    })
 
 
     //main-slider-box
