@@ -106,6 +106,9 @@
 }
 .categories-box {
     margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0;
+    }
     .items-wrap {
         margin: 0 -20px;
     }
@@ -502,8 +505,18 @@
     justify-content: center;
     margin-bottom: 20px;
 }
+.reviews-show {
+    .tabs-outer-box {
+        .form-wrap {
+            display: block;
+        }
+    }
+}
 .tabs-outer-box {
     margin-bottom: 40px;
+    .form-wrap {
+        display: none;
+    }
 }
 .articles-box {
     margin-bottom: 24px;
@@ -651,6 +664,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    padding-left: 10px;
     .btn-action-ico {
         margin: 0 2px 0 0;
         display: block;
@@ -1736,11 +1750,21 @@
         text-transform: uppercase;
     }
     .tags-wrap {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 -20px;
-        flex-wrap: wrap;
+        ul {
+            margin: 0 -20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+        li {
+            margin: 0;
+            padding: 0;
+            &:before {
+                display: none;
+            }
+        }
     }
     .elm-tag {
         margin: 0 20px;
@@ -1965,6 +1989,9 @@
             margin: -20px -20px 0 -20px;
             padding: 36px 0;
             background: #f2e0c6;
+        }
+        .slick-slide:nth-child(3)~.slick-slide {
+            display: none;
         }
     }
 }
@@ -3046,8 +3073,10 @@
             margin-top: 30px;
         }
         .tags-wrap {
-            margin-left: -26px;
-            margin-right: -26px;
+            ul {
+                margin-left: -26px;
+                margin-right: -26px;
+            }
         }
         .title-wrap {
             margin-bottom: 45px;

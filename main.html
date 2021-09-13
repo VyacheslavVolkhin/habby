@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 
 <head>
     <title>Главная</title>
@@ -22,7 +22,7 @@
 
 
         <!-- header -->
-        <header class="header">
+        <header class="header soc-out">
             <div class="header-top-panel">
                 <div class="iner-wrap">
                     <ul>
@@ -50,9 +50,11 @@
                             </div>
                         </div>
                         <div class="phone-wrap">
-                            <div class="phone-title">Подзвонити нам</div>
-                            <div class="phone-number">
-                                <a href="tel:+380999999999">+38 099 999 99 99</a>
+                            <div class="phone-info">
+                                <div class="phone-title">Подзвонити нам</div>
+                                <div class="phone-number">
+                                    <a href="tel:+380999999999">+38 099 999 99 99</a>
+                                </div>
                             </div>
                             <div class="phone-button">
                                 <a href="" class="btn button-light button-border">
@@ -179,16 +181,18 @@
                 <div class="title-wrap">
                     <h1 class="h1-title">Підбірки товарів</h1>
                 </div>
-                <div class="tags-wrap">
-                    <a href="" class="elm-tag active">ТОП продажів</a>
-                    <a href="" class="elm-tag">Новинки</a>
-                    <a href="" class="elm-tag">Акції</a>
+                <div class="tags-wrap js-tabs-nav">
+                    <ul>
+                        <li><a href="" data-tab="01" class="elm-tag active">Популярні</a></li>
+                        <li><a href="" data-tab="02" class="elm-tag">Новинки</a></li>
+                        <li><a href="" data-tab="03" class="elm-tag">Акції</a></li>
+                    </ul>
                 </div>
             </div>
             <!--/main-title-box-->
 
             <!--catalog-box-->
-            <div class="catalog-box">
+            <div class="catalog-box js-tab-block" data-tab="01">
                 <div class="items-wrap">
                     <!--item wrap-->
                     <div class="item-wrap">
@@ -203,7 +207,7 @@
                                     <div class="elm-sticker st-new">новинка</div>
                                 </div>
                                 <div class="cat-sticker">
-                                    <div class="elm-sticker st-top">топ продажів</div>
+                                    <div class="elm-sticker st-top">Популярні</div>
                                 </div>
                             </div>
                             <div class="cat-title-wrap">
@@ -245,9 +249,9 @@
                                 </a>
                             </div>
                             <div class="cat-stickers-wrap">
-                                <span class="cat-sticker">
+                                <div class="cat-sticker">
                                     <div class="elm-sticker st-action">акція</div>
-                                </span>
+                                </div>
                             </div>
                             <div class="cat-title-wrap">
                                 <a href="" class="cat-title">Еко свічки Еуф Ligts <br>6 шт</a>
@@ -288,9 +292,9 @@
                                 </a>
                             </div>
                             <div class="cat-stickers-wrap">
-                                <span class="cat-sticker">
-                                    <div class="elm-sticker st-top">топ продажів</div>
-                                </span>
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
                             </div>
                             <div class="cat-title-wrap">
                                 <a href="" class="cat-title">Еко стаканчики <br>В наборі 10 шт</a>
@@ -375,7 +379,7 @@
                                     <div class="elm-sticker st-new">новинка</div>
                                 </div>
                                 <div class="cat-sticker">
-                                    <div class="elm-sticker st-top">топ продажів</div>
+                                    <div class="elm-sticker st-top">Популярні</div>
                                 </div>
                             </div>
                             <div class="cat-title-wrap">
@@ -461,7 +465,7 @@
                             </div>
                             <div class="cat-stickers-wrap">
                                 <div class="cat-sticker">
-                                    <div class="elm-sticker st-top">топ продажів</div>
+                                    <div class="elm-sticker st-top">Популярні</div>
                                 </div>
                             </div>
                             <div class="cat-title-wrap">
@@ -543,12 +547,12 @@
                                 </a>
                             </div>
                             <div class="cat-stickers-wrap">
-                                <span class="cat-sticker">
+                                <div class="cat-sticker">
                                     <div class="elm-sticker st-new">новинка</div>
-                                </span>
-                                <span class="cat-sticker">
-                                    <div class="elm-sticker st-top">топ продажів</div>
-                                </span>
+                                </div>
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
                             </div>
                             <div class="cat-title-wrap">
                                 <a href="" class="cat-title">Натуральная олія <br>15 мг</a>
@@ -589,9 +593,9 @@
                                 </a>
                             </div>
                             <div class="cat-stickers-wrap">
-                                <span class="cat-sticker">
+                                <div class="cat-sticker">
                                     <div class="elm-sticker st-action">акція</div>
-                                </span>
+                                </div>
                             </div>
                             <div class="cat-title-wrap">
                                 <a href="" class="cat-title">Еко свічки Еуф Ligts <br>6 шт</a>
@@ -632,9 +636,717 @@
                                 </a>
                             </div>
                             <div class="cat-stickers-wrap">
-                                <span class="cat-sticker">
-                                    <div class="elm-sticker st-top">топ продажів</div>
-                                </span>
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Еко стаканчики <br>В наборі 10 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">5</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat04.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Одноразовий посуд <br>2 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">5</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+                <div class="more-box">
+                    <a href="" class="btn button-light">Більше товарів</a>
+                </div>
+            </div>
+            <!--/catalog-box-->
+
+            <!--catalog-box-->
+            <div class="catalog-box js-tab-block" data-tab="02">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat02.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-action">акція</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Еко свічки Еуф Ligts <br>6 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">0</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat01.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-new">новинка</div>
+                                </div>
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Натуральная олія <br>15 мг</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total"></div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat03.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Еко стаканчики <br>В наборі 10 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">5</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat04.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Одноразовий посуд <br>2 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">5</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat01.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-new">новинка</div>
+                                </div>
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Натуральная олія <br>15 мг</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total"></div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat02.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-action">акція</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Еко свічки Еуф Ligts <br>6 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">0</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat03.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Еко стаканчики <br>В наборі 10 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">5</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat04.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Одноразовий посуд <br>2 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">5</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat01.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-new">новинка</div>
+                                </div>
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Натуральная олія <br>15 мг</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total"></div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat02.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-action">акція</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Еко свічки Еуф Ligts <br>6 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">0</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat03.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Еко стаканчики <br>В наборі 10 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">5</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat04.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Одноразовий посуд <br>2 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">5</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+                <div class="more-box">
+                    <a href="" class="btn button-light">Більше товарів</a>
+                </div>
+            </div>
+            <!--/catalog-box-->
+
+            <!--catalog-box-->
+            <div class="catalog-box js-tab-block" data-tab="03">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat01.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-new">новинка</div>
+                                </div>
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Натуральная олія <br>15 мг</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate"></div>
+                                        <div class="elm-rate rate-empty"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total"></div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat02.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-action">акція</div>
+                                </div>
+                            </div>
+                            <div class="cat-title-wrap">
+                                <a href="" class="cat-title">Еко свічки Еуф Ligts <br>6 шт</a>
+                            </div>
+                            <div class="cat-info-wrap">
+                                <div class="cat-rate-wrap">
+                                    <div class="elm-rates">
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                        <div class="elm-rate rate-disabled"></div>
+                                    </div>
+                                    <div class="cat-comments">
+                                        <a href="" class="btn-action-ico ico-comments"></a>
+                                        <div class="cat-comments-total">0</div>
+                                    </div>
+                                </div>
+                                <div class="cat-price-wrap">
+                                    <div class="elm-price">95 грн</div>
+                                </div>
+                                <div class="cat-actions-wrap">
+                                    <a href="" class="btn-action-cart">
+                                        <span class="button-title">В кошик</span>
+                                    </a>
+                                    <a href="" class="btn-action-ico ico-favorites js-btn-tgl"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-catalog">
+                            <div class="cat-photo-wrap">
+                                <a href="" class="cat-photo">
+                                    <img src="./img/cat03.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="cat-stickers-wrap">
+                                <div class="cat-sticker">
+                                    <div class="elm-sticker st-top">Популярні</div>
+                                </div>
                             </div>
                             <div class="cat-title-wrap">
                                 <a href="" class="cat-title">Еко стаканчики <br>В наборі 10 шт</a>
@@ -733,7 +1445,7 @@
                                         <div class="c-title">Віктория Мелешко</div>
                                     </div>
                                     <div class="c-text-wrap">
-                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
                                     </div>
                                 </div>
                             </div>
@@ -750,7 +1462,7 @@
                                         <div class="c-title">Віктория Мелешко</div>
                                     </div>
                                     <div class="c-text-wrap">
-                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
                                     </div>
                                 </div>
                             </div>
@@ -767,7 +1479,7 @@
                                         <div class="c-title">Віктория Мелешко</div>
                                     </div>
                                     <div class="c-text-wrap">
-                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
                                     </div>
                                 </div>
                             </div>
@@ -784,7 +1496,7 @@
                                         <div class="c-title">Віктория Мелешко</div>
                                     </div>
                                     <div class="c-text-wrap">
-                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
                                     </div>
                                 </div>
                             </div>
@@ -801,7 +1513,7 @@
                                         <div class="c-title">Віктория Мелешко</div>
                                     </div>
                                     <div class="c-text-wrap">
-                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
                                     </div>
                                 </div>
                             </div>
@@ -818,7 +1530,7 @@
                                         <div class="c-title">Віктория Мелешко</div>
                                     </div>
                                     <div class="c-text-wrap">
-                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                        <div class="c-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
                                     </div>
                                 </div>
                             </div>

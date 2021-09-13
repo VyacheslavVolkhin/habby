@@ -72,6 +72,11 @@ $(document).ready(function(){
 				$('.js-tab-block[data-tab*="'+$(this).find('.active').attr('data-tab')+'"]').addClass('active');
 			})
 		}
+		if ($(this).hasClass('js-review-tab')) {
+		    $('body').addClass('reviews-show');
+        } else {
+            $('body').removeClass('reviews-show');
+        }
 		return false;
 	})
 	$('.js-tab-title').on('click' , function() {
@@ -104,10 +109,31 @@ $(document).ready(function(){
         return false;
     })
 
-
+    //animate anchor scroll
+    $('.js-anchor-button').on("click", function (e) {
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
+        return false;
+    });
+    $('.js-anchor-comment').on("click", function (e) {
+        var anchor = $(this);
+        $('.js-review-tab').click();
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
+        return false;
+    });
+    
+    
     //item-video
     $('.js-btn-video').on('click', function () {
-        $(this).parents('.js-video').addClass('active');
+        let videoURL = $(this).parent('.item-video').attr('data-video');
+        $(this).parents('.item-video').addClass('active');
+        $(this).parents('.item-video').append('<iframe width="100%" height="100%" src="'+videoURL+'" frameborder="0" allowfullscreen></iframe>')
         return false;
     })
 
@@ -188,7 +214,7 @@ $(document).ready(function(){
                     slidesToShow: 3,
                     infinite: true,
                     variableWidth: false,
-                    dots: true,
+                    dots: false,
                     prevArrow: false,
                     nextArrow: false
                 }

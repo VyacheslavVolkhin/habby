@@ -636,6 +636,11 @@ body {
   }
   .header-main-panel .search-block {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
   }
   .header-main-panel .phone-title,
   .header-main-panel .phone-button {
@@ -829,6 +834,24 @@ body {
   }
   .header {
     margin-bottom: 45px;
+  }
+  .header.soc-out .header-main-panel .soc-wrap {
+    display: none;
+  }
+  .header.soc-out .header-main-panel .phone-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 55px 0 0;
+  }
+  .header.soc-out .header-main-panel .phone-info {
+    padding: 0 20px 0 0;
+  }
+  .header.soc-out .header-main-panel .search-wrap {
+    padding-right: 50px;
   }
   .main-sbs-box {
     padding: 55px 0 40px 0;
@@ -1310,6 +1333,12 @@ body {
   }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
+  .header.soc-out .header-main-panel .phone-wrap {
+    padding: 0 30px 0 0;
+  }
+  .header.soc-out .header-main-panel .search-wrap {
+    padding-right: 20px;
+  }
   .header-main-panel .logo-wrap {
     width: 186px;
     padding-left: 0;
@@ -1431,6 +1460,9 @@ body {
 }
 .categories-box {
   margin-bottom: 40px;
+}
+.categories-box:last-child {
+  margin-bottom: 0;
 }
 .categories-box .items-wrap {
   margin: 0 -20px;
@@ -1860,8 +1892,14 @@ body {
           justify-content: center;
   margin-bottom: 20px;
 }
+.reviews-show .tabs-outer-box .form-wrap {
+  display: block;
+}
 .tabs-outer-box {
   margin-bottom: 40px;
+}
+.tabs-outer-box .form-wrap {
+  display: none;
 }
 .articles-box {
   margin-bottom: 24px;
@@ -2028,6 +2066,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
 .card-soc-wrap .btn-action-ico {
   margin: 0 2px 0 0;
@@ -3206,19 +3245,27 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.main-title-box .tags-wrap {
+.main-title-box .tags-wrap ul {
+  margin: 0 -20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 -20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.main-title-box .tags-wrap li {
+  margin: 0;
+  padding: 0;
+}
+.main-title-box .tags-wrap li:before {
+  display: none;
 }
 .main-title-box .elm-tag {
   margin: 0 20px;
@@ -3452,6 +3499,9 @@ body {
     margin: -20px -20px 0 -20px;
     padding: 36px 0;
     background: #f2e0c6;
+  }
+  .clients-box .slick-slide:nth-child(3) ~ .slick-slide {
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -4567,7 +4617,7 @@ body {
     font-size: 30px;
     margin-top: 30px;
   }
-  .main-title-box .tags-wrap {
+  .main-title-box .tags-wrap ul {
     margin-left: -26px;
     margin-right: -26px;
   }
@@ -5348,6 +5398,7 @@ body {
 .elm-more {
   display: inline-block;
   vertical-align: middle;
+  position: relative;
   height: 30px;
   line-height: 28px;
   padding: 0 32px 0 19px;
@@ -5362,13 +5413,13 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -54px -298px;
-  width: 7px;
+  background-position: -81px -298px;
+  width: 6px;
   height: 9px;
   position: absolute;
   top: 50%;
   right: 13px;
-  margin-top: -6px;
+  margin-top: -4px;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
 }
@@ -6091,9 +6142,7 @@ body {
     height: 32px;
     line-height: 32px;
     padding: 0 10px;
-    background: #f2e0c6;
     font-size: 16px;
-    color: #5e514c;
   }
   .elm-rate {
     background-image: url(../img/spr.png);
@@ -6377,6 +6426,10 @@ input[type="submit"].button-small {
   padding-left: 16px;
   height: 16px;
   color: #543029;
+}
+.btn-action-rate:hover {
+  color: #543029;
+  opacity: 0.7;
 }
 .btn-action-rate:before {
   content: "";
@@ -8058,6 +8111,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: -186px -259px;
   width: 11px;
   height: 7px;
+}
+.icon-arrow12 {
+  background-image: url(../img/spr.png);
+  background-position: -81px -298px;
+  width: 6px;
+  height: 9px;
 }
 .icon-attention {
   background-image: url(../img/spr.png);
