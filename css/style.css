@@ -751,7 +751,7 @@ body {
     -webkit-transition: none;
     transition: none;
     background-image: url(../img/spr.png);
-    background-position: -146px -260px;
+    background-position: -234px -218px;
     width: 9px;
     height: 12px;
     position: absolute;
@@ -1326,7 +1326,7 @@ body {
     -webkit-transition: none;
     transition: none;
     background-image: url(../img/spr.png);
-    background-position: -175px -260px;
+    background-position: -241px -260px;
     width: 11px;
     height: 8px;
     margin-left: 8px;
@@ -1347,6 +1347,49 @@ body {
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.lead-box {
+  line-height: 1;
+  position: relative;
+  margin: 0 -20px 20px -20px;
+}
+.lead-box img {
+  display: block;
+  width: 100%;
+}
+.catalog-actions-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+  position: relative;
+  margin-bottom: 30px;
+}
+.catalog-actions-box .btn,
+.catalog-actions-box button,
+.catalog-actions-box input[type="submit"] {
+  height: 31px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+.catalog-actions-box select {
+  height: 31px;
+  padding: 0 30px 0 10px;
+  font-size: 16px;
+  border-color: #fcf4e9;
+  color: #b37542;
+  background: #fcf4e9 url(../img/icons/arrow01.png) right 10px center no-repeat;
+  background-size: 7px auto;
+}
+.catalog-actions-box .action-title {
+  padding: 0 25px 0 0;
+  color: #b37542;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+}
 .actions-box .items-wrap {
   margin: 0;
 }
@@ -1393,7 +1436,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -146px -260px;
+  background-position: -234px -218px;
   width: 9px;
   height: 12px;
   position: absolute;
@@ -2983,6 +3026,12 @@ body {
   color: #b7b7b7;
   text-decoration: underline;
 }
+.article-inner-box {
+  font-size: 14px;
+  line-height: 1.71428571;
+  color: #000;
+  margin-bottom: 50px;
+}
 .article-box {
   font-size: 18px;
   line-height: 1.22222222;
@@ -3297,6 +3346,188 @@ body {
   right: 44px;
 }
 @media (max-width: 1023px) {
+  .filter-show .filter-box {
+    display: block;
+  }
+  .filter-inner-show .filter-box .filter-section {
+    display: none;
+  }
+  .filter-inner-show .filter-box .filter-section.active {
+    display: block;
+  }
+  .filter-inner-show .filter-box .filter-section.active .section-content {
+    display: block;
+  }
+  .filter-inner-show .filter-box .filter-section .section-title {
+    display: none;
+  }
+  .filter-inner-show .filter-box .filter-actions .action-wrap {
+    width: 50%;
+    padding: 0 15px 0 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .filter-inner-show .filter-box .filter-actions .action-wrap + .action-wrap {
+    display: block;
+    padding: 0 0 0 15px;
+  }
+  .filter-box {
+    display: none;
+    -webkit-animation: fadein ease 0.2s;
+            animation: fadein ease 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 367px;
+    z-index: 199;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(38, 39, 42, 0.47);
+            box-shadow: 0px 0px 5px 0px rgba(38, 39, 42, 0.47);
+    background: #fff;
+  }
+  .filter-box .filter-block {
+    position: relative;
+    overflow: hidden;
+    padding: 8px 0 0 0;
+  }
+  .filter-box .filter-actions {
+    padding: 20px 20px 20px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .filter-box .filter-actions .action-wrap {
+    line-height: 1;
+    position: relative;
+    width: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .filter-box .filter-actions .action-wrap:last-child {
+    display: none;
+  }
+  .filter-box .filter-actions .btn,
+  .filter-box .filter-actions button,
+  .filter-box .filter-actions input[type="submit"] {
+    width: 100%;
+    padding: 0;
+    height: 54px;
+    background: #f2e0c6;
+    border: none;
+    font-size: 24px;
+    color: #000000;
+  }
+  .filter-box .filter-actions .btn:hover,
+  .filter-box .filter-actions button:hover,
+  .filter-box .filter-actions input[type="submit"]:hover {
+    background: #9d8b71;
+    color: #fff;
+  }
+  .filter-box .section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 50px;
+    font-size: 24px;
+    color: #000000;
+    position: relative;
+    cursor: pointer;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+  }
+  .filter-box .section-title .title-text {
+    padding-right: 10px;
+    display: block;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .filter-box .section-title .title-text:last-child {
+    padding: 0;
+  }
+  .filter-box .section-title a {
+    color: #000;
+  }
+  .filter-box .section-title.title-arrow {
+    padding-right: 40px;
+  }
+  .filter-box .section-title.title-arrow:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: none;
+    transition: none;
+    background-image: url(../img/spr.png);
+    background-position: -212px -260px;
+    width: 9px;
+    height: 12px;
+    right: 12px;
+    top: 50%;
+    margin-top: -6px;
+    position: absolute;
+  }
+  .filter-box .ui-slider {
+    display: none !important;
+  }
+  .filter-box .section-content {
+    display: none;
+    padding: 20px 30px;
+    min-height: 320px;
+  }
+  .filter-box .section-content .frm-select {
+    margin-bottom: 8px;
+  }
+  .filter-box .section-content .frm-select label {
+    min-height: 32px;
+    padding-left: 52px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    line-height: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .filter-box .section-content .frm-select label:before {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #000;
+    background: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  .filter-box .section-content .frm-select label:after {
+    -webkit-filter: brightness(1) invert(1);
+            filter: brightness(1) invert(1);
+    top: 16px;
+    left: 16px;
+    margin: -8px 0 0 -8px;
+  }
+  .filter-box .filter-title-wrap {
+    display: block;
+    position: relative;
+    background: #eeeeee;
+    padding: 24px 50px 0 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .filter-box .filter-title {
+    line-height: 50px;
+    display: block;
+  }
+  .filter-box .btn-filter-close {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+  }
   .popup-menu-box {
     position: absolute;
     top: -176px;
@@ -3607,6 +3838,77 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .filter-box {
+    margin-bottom: 40px;
+    background: #f2e0c6;
+    padding: 15px 25px;
+    color: #b37542;
+  }
+  .filter-box .filter-section {
+    margin-top: 35px;
+  }
+  .filter-box .filter-section:last-child {
+    margin-bottom: 0;
+  }
+  .filter-box .filter-section:first-child {
+    margin-top: 0;
+  }
+  .filter-box .filter-actions {
+    display: none;
+  }
+  .filter-box .filter-title-wrap {
+    display: none;
+  }
+  .filter-box .section-title {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    color: #b37542;
+    font-style: italic;
+    margin: 0 0 10px 0;
+  }
+  .filter-box .section-title a {
+    display: none;
+  }
+  .filter-box .frm-select {
+    margin-bottom: 12px;
+  }
+  .filter-box .frm-select:last-child {
+    margin-bottom: 0;
+  }
+  .filter-box .frm-select label {
+    font-size: 14px;
+    line-height: 18px;
+    min-height: 18px;
+    padding: 0 0 0 25px;
+  }
+  .filter-box .frm-select label:before {
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  .filter-box .frm-select label:after {
+    background-image: url(../img/spr.png);
+    background-position: -301px -165px;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  .catalog-actions-box {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 30px;
+    padding-right: 25px;
+  }
+  .lead-box {
+    margin: 0 0 20px 0;
+  }
   .popup-menu-box .btn-menu-close,
   .popup-menu-box .btn-popup-menu {
     display: none;
@@ -3615,6 +3917,9 @@ body {
     border: 1px solid #f2e0c6;
     margin-bottom: 14px;
     font-weight: 600;
+  }
+  .side-menu-box.type-second {
+    border: none;
   }
   .side-menu-box .menu-block {
     display: block;
@@ -3660,6 +3965,9 @@ body {
     color: rgba(179, 117, 66, 0.8);
     background: none;
   }
+  .side-menu-box .menu-wrap i {
+    font-weight: 400;
+  }
   .content-outer-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3669,6 +3977,15 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+  }
+  .content-outer-wrap.type-second {
+    margin-bottom: 0;
+  }
+  .content-outer-wrap.type-second .side-wrap {
+    padding-top: 0;
+  }
+  .content-outer-wrap.type-second + .hr {
+    margin-bottom: 26px;
   }
   .content-outer-wrap .side-wrap {
     width: 294px;
@@ -3686,6 +4003,9 @@ body {
   }
   .content-outer-wrap .content-wrap:last-child {
     max-width: 100%;
+  }
+  .content-outer-wrap .catalog-box .item-wrap {
+    width: 50%;
   }
   .toggle-box .items-wrap {
     margin: 0;
@@ -4677,6 +4997,9 @@ body {
   .catalog-box .item-wrap {
     width: 25%;
   }
+  .content-outer-wrap .catalog-box .item-wrap {
+    width: 33.33%;
+  }
 }
 /* ----------------------------------- *\
 			items styles
@@ -4751,7 +5074,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -237px -260px;
+  background-position: -303px -260px;
   width: 11px;
   height: 7px;
   margin: 5px 0 0 10px;
@@ -5250,7 +5573,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -206px -260px;
+  background-position: -272px -260px;
   width: 11px;
   height: 7px;
   position: absolute;
@@ -5723,19 +6046,19 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -80px -260px;
+  background-position: -146px -260px;
   width: 13px;
   height: 13px;
 }
 .elm-rate.rate-empty {
   background-image: url(../img/spr.png);
-  background-position: -231px -218px;
+  background-position: -113px -260px;
   width: 13px;
   height: 13px;
 }
 .elm-rate.rate-disabled {
   background-image: url(../img/spr.png);
-  background-position: -198px -218px;
+  background-position: -80px -260px;
   width: 13px;
   height: 13px;
 }
@@ -6462,7 +6785,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -113px -260px;
+  background-position: -179px -260px;
   width: 13px;
   height: 13px;
   position: absolute;
@@ -6571,6 +6894,25 @@ input[type="submit"].button-small {
 .btn-action-ico.button-soc-main:hover {
   opacity: 0.85;
 }
+.btn-action-ico.ico-close-small:before,
+.btn-action-ico.ico-close-small:after {
+  width: 18px;
+  height: 2px;
+  margin: -1px 0 0 -9px;
+  background: #818181;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: -webkit-rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.btn-action-ico.ico-close-small:before {
+  -webkit-transform: -webkit-rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 .btn-action-ico.ico-menu:before,
 .btn-action-ico.ico-close:before,
 .btn-action-ico.ico-menu:after,
@@ -6635,7 +6977,7 @@ input[type="submit"].button-small {
 }
 .btn-action-ico.ico-search-form:before {
   background-image: url(../img/spr.png);
-  background-position: -301px -165px;
+  background-position: -301px -203px;
   width: 17px;
   height: 17px;
 }
@@ -6689,7 +7031,7 @@ input[type="submit"].button-small {
 }
 .btn-action-ico.ico-favorites:before {
   background-image: url(../img/spr.png);
-  background-position: -164px -218px;
+  background-position: -200px -218px;
   width: 14px;
   height: 14px;
 }
@@ -7559,7 +7901,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -301px -202px;
+  background-position: -181px -128px;
   width: 16px;
   height: 16px;
   margin-top: -8px;
@@ -7609,7 +7951,108 @@ input[type="submit"].button-small {
 .slick-dots button:hover {
   background: #f9f5f5;
 }
+.frm-field-range {
+  margin-bottom: 20px;
+  line-height: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.frm-field-range .range-wrap {
+  width: 50%;
+  padding: 0 5px 0 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.frm-field-range .range-wrap + .range-wrap {
+  padding: 0 0 0 5px;
+}
+.frm-field-range input[type="text"] {
+  width: 100%;
+  height: 28px;
+  border: 1px solid #b37542;
+  background: #fff;
+  padding: 0 0 0 14px;
+  font-size: 14px;
+  color: #000;
+}
+.frm-field-range .range-button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1;
+  width: 76px;
+}
+.frm-field-range .range-button .btn,
+.frm-field-range .range-button button,
+.frm-field-range .range-button input[type="submit"] {
+  width: 100%;
+  padding: 0;
+  height: 30px;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  background: #f2e0c6;
+}
+.frm-field-range .range-button .btn:hover,
+.frm-field-range .range-button button:hover,
+.frm-field-range .range-button input[type="submit"]:hover {
+  background: #9d8b71;
+  color: #fff;
+}
+body .ui-slider {
+  height: 3px;
+  background: #fff;
+}
+body .ui-slider .ui-slider-range {
+  background: #b37542;
+}
+body .ui-slider .ui-slider-handle {
+  outline: none;
+  background: #b37542;
+  width: 5px;
+  height: 16px;
+  margin-top: -6px;
+  margin-left: -3px;
+  cursor: pointer;
+  top: 0;
+}
 @media (max-width: 1023px) {
+  .frm-field-range {
+    margin-bottom: 0;
+    padding-right: 120px;
+    position: relative;
+  }
+  .frm-field-range:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -66px;
+  }
+  .frm-field-range .range-wrap {
+    padding: 0 23px 0 0;
+  }
+  .frm-field-range .range-wrap + .range-wrap {
+    padding: 0 0 0 23px;
+  }
+  .frm-field-range .range-button {
+    display: block;
+  }
+  .frm-field-range input[type="text"] {
+    height: 30px;
+    border: 1px solid #000;
+    padding: 0 0 0 6px;
+    font-size: 24px;
+  }
   .frm-field-input.input-large input.field-input,
   .frm-field-input.input-large select.field-input {
     height: 117px;
@@ -7701,7 +8144,7 @@ input[type="submit"].button-small {
   }
   .btn-action-ico.ico-search:before {
     background-image: url(../img/spr.png);
-    background-position: -301px -165px;
+    background-position: -301px -203px;
     width: 17px;
     height: 17px;
   }
@@ -7725,13 +8168,13 @@ input[type="submit"].button-small {
   }
   .btn-action-ico.ico-favorites:before {
     background-image: url(../img/spr.png);
-    background-position: -128px -218px;
+    background-position: -164px -218px;
     width: 16px;
     height: 14px;
   }
   .btn-action-ico.ico-favorites:after {
     background-image: url(../img/spr.png);
-    background-position: -181px -128px;
+    background-position: -128px -218px;
     width: 16px;
     height: 14px;
   }
@@ -8080,13 +8523,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-arrow01 {
   background-image: url(../img/spr.png);
-  background-position: -146px -260px;
+  background-position: -234px -218px;
   width: 9px;
   height: 12px;
 }
 .icon-arrow02 {
   background-image: url(../img/spr.png);
-  background-position: -175px -260px;
+  background-position: -241px -260px;
   width: 11px;
   height: 8px;
 }
@@ -8110,7 +8553,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-arrow06 {
   background-image: url(../img/spr.png);
-  background-position: -206px -260px;
+  background-position: -272px -260px;
   width: 11px;
   height: 7px;
 }
@@ -8140,7 +8583,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-arrow11 {
   background-image: url(../img/spr.png);
-  background-position: -237px -260px;
+  background-position: -303px -260px;
   width: 11px;
   height: 7px;
 }
@@ -8149,6 +8592,12 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: -340px -91px;
   width: 6px;
   height: 9px;
+}
+.icon-arrow13 {
+  background-image: url(../img/spr.png);
+  background-position: -212px -260px;
+  width: 9px;
+  height: 12px;
 }
 .icon-attention {
   background-image: url(../img/spr.png);
@@ -8200,9 +8649,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-check-form {
   background-image: url(../img/spr.png);
-  background-position: -301px -202px;
+  background-position: -181px -128px;
   width: 16px;
   height: 16px;
+}
+.icon-check-second {
+  background-image: url(../img/spr.png);
+  background-position: -301px -165px;
+  width: 18px;
+  height: 18px;
 }
 .icon-check {
   background-image: url(../img/spr.png);
@@ -8218,19 +8673,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-fav-active {
   background-image: url(../img/spr.png);
-  background-position: -181px -128px;
+  background-position: -128px -218px;
   width: 16px;
   height: 14px;
 }
 .icon-fav-inactive-m {
   background-image: url(../img/spr.png);
-  background-position: -164px -218px;
+  background-position: -200px -218px;
   width: 14px;
   height: 14px;
 }
 .icon-fav-inactive {
   background-image: url(../img/spr.png);
-  background-position: -128px -218px;
+  background-position: -164px -218px;
   width: 16px;
   height: 14px;
 }
@@ -8278,7 +8733,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-rate-disabled-m {
   background-image: url(../img/spr.png);
-  background-position: -198px -218px;
+  background-position: -80px -260px;
   width: 13px;
   height: 13px;
 }
@@ -8290,7 +8745,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-rate-empty-m {
   background-image: url(../img/spr.png);
-  background-position: -231px -218px;
+  background-position: -113px -260px;
   width: 13px;
   height: 13px;
 }
@@ -8314,7 +8769,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-rate-full-m {
   background-image: url(../img/spr.png);
-  background-position: -80px -260px;
+  background-position: -146px -260px;
   width: 13px;
   height: 13px;
 }
@@ -8332,7 +8787,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-rate-up {
   background-image: url(../img/spr.png);
-  background-position: -113px -260px;
+  background-position: -179px -260px;
   width: 13px;
   height: 13px;
 }
@@ -8350,7 +8805,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-search {
   background-image: url(../img/spr.png);
-  background-position: -301px -165px;
+  background-position: -301px -203px;
   width: 17px;
   height: 17px;
 }
