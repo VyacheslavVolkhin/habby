@@ -3880,6 +3880,9 @@ body {
   .cat-title-box .h2-title {
     margin-bottom: 0;
   }
+  .cat-title-box .btn {
+    margin-left: 56px;
+  }
   .articles-box {
     margin-bottom: 40px;
   }
@@ -3930,6 +3933,7 @@ body {
   .tabs-box a {
     padding-left: 30px;
     padding-right: 30px;
+    font-size: 18px;
   }
   .reviews-box .items-wrap {
     margin: 0;
@@ -7668,6 +7672,7 @@ input[type="submit"].button-small {
     height: 35px;
     padding: 0 14px;
     font-size: 18px;
+    letter-spacing: 0.025em;
   }
   .btn-action-toggle {
     padding-left: 29px;
