@@ -529,6 +529,7 @@ input[type="submit"] {
     position: relative;
     overflow: hidden;
     border: 3px solid #fff;
+    transition: all ease 0.2s;
     &:before {
         content: "";
         .i;
@@ -537,12 +538,19 @@ input[type="submit"] {
         left: 5px;
         top: 50%;
         margin-top: -11px;
+        transition: all ease 0.2s;
     }
     &:hover {
-        color: #b37542;
-        opacity: 0.85;
+        //color: #b37542;
+        //opacity: 0.85;
+        //border-color: #b37542;
+        //background: #f2e0c6;
+        background: #b37542;
         border-color: #b37542;
-        background: #f2e0c6;
+        color: #fff;
+        &:before {
+            filter: brightness(0) invert(1);
+        }
     }
 }
 .btn-action-lang {

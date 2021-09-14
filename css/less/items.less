@@ -746,6 +746,7 @@
     .cat-info-wrap {
         flex-shrink: 0;
         padding: 0 15px 10px 15px;
+        position: static;
     }
     .cat-rate-wrap {
         display: flex;
@@ -768,6 +769,19 @@
         .btn-action-ico {
             height: 30px;
             width: 30px;
+            &.ico-favorites {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 60px;
+                height: 60px;
+                &:before {
+                    .icon-fav-main;
+                }
+                &:after {
+                    .icon-fav-main-active;
+                }
+            }
         }
     }
     .cat-comments {
@@ -776,7 +790,7 @@
         min-width: 46px;
     }
     .cat-comments-total {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 20px;
         color: #b37542;
     }
@@ -1246,7 +1260,7 @@
             padding-right: 5px;
         }
         .cat-comments {
-            min-width: 55px;
+            min-width: 65px;
         }
         .cat-title {
             min-height: 40px;

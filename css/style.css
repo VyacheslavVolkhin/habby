@@ -662,7 +662,7 @@ body {
     -webkit-transition: none;
     transition: none;
     background-image: url(../img/spr.png);
-    background-position: -169px 0px;
+    background-position: 0px -128px;
     width: 29px;
     height: 27px;
     position: absolute;
@@ -751,7 +751,7 @@ body {
     -webkit-transition: none;
     transition: none;
     background-image: url(../img/spr.png);
-    background-position: -97px -259px;
+    background-position: -146px -260px;
     width: 9px;
     height: 12px;
     position: absolute;
@@ -1115,7 +1115,7 @@ body {
     -webkit-transition: none;
     transition: none;
     background-image: url(../img/spr.png);
-    background-position: -261px -189px;
+    background-position: -57px -49px;
     width: 11px;
     height: 9px;
     position: absolute;
@@ -1326,7 +1326,7 @@ body {
     -webkit-transition: none;
     transition: none;
     background-image: url(../img/spr.png);
-    background-position: -57px -49px;
+    background-position: -175px -260px;
     width: 11px;
     height: 8px;
     margin-left: 8px;
@@ -1393,7 +1393,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -97px -259px;
+  background-position: -146px -260px;
   width: 9px;
   height: 12px;
   position: absolute;
@@ -2298,7 +2298,7 @@ body {
 }
 .photos-slider-box .btn-action-ico.ico-arrow:before {
   background-image: url(../img/spr.png);
-  background-position: 0px -298px;
+  background-position: -340px 0px;
   width: 7px;
   height: 11px;
 }
@@ -2964,7 +2964,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -54px -298px;
+  background-position: -340px -62px;
   width: 7px;
   height: 9px;
   position: absolute;
@@ -3652,7 +3652,7 @@ body {
   }
   .side-menu-box .menu-wrap .submenu > a:before {
     background-image: url(../img/spr.png);
-    background-position: 0px -298px;
+    background-position: -340px 0px;
     width: 7px;
     height: 11px;
   }
@@ -4747,7 +4747,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -186px -259px;
+  background-position: -237px -260px;
   width: 11px;
   height: 7px;
   margin: 5px 0 0 10px;
@@ -4964,7 +4964,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -41px -218px;
+  background-position: 0px -260px;
   width: 20px;
   height: 20px;
   -webkit-transition: all ease 0.2s;
@@ -4976,7 +4976,7 @@ body {
 }
 .item-faq .btn-faq:after {
   background-image: url(../img/spr.png);
-  background-position: -81px -218px;
+  background-position: -40px -260px;
   width: 20px;
   height: 20px;
   opacity: 0;
@@ -5051,7 +5051,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -296px -43px;
+  background-position: -301px -43px;
   width: 18px;
   height: 24px;
   position: absolute;
@@ -5246,7 +5246,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -155px -259px;
+  background-position: -206px -260px;
   width: 11px;
   height: 7px;
   position: absolute;
@@ -5413,7 +5413,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -81px -298px;
+  background-position: -340px -91px;
   width: 6px;
   height: 9px;
   position: absolute;
@@ -5535,6 +5535,7 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 0 15px 10px 15px;
+  position: static;
 }
 .item-catalog .cat-rate-wrap {
   display: -webkit-box;
@@ -5575,6 +5576,25 @@ body {
   height: 30px;
   width: 30px;
 }
+.item-catalog .cat-actions-wrap .btn-action-ico.ico-favorites {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+}
+.item-catalog .cat-actions-wrap .btn-action-ico.ico-favorites:before {
+  background-image: url(../img/spr.png);
+  background-position: -169px 0px;
+  width: 30px;
+  height: 28px;
+}
+.item-catalog .cat-actions-wrap .btn-action-ico.ico-favorites:after {
+  background-image: url(../img/spr.png);
+  background-position: -105px -79px;
+  width: 30px;
+  height: 28px;
+}
 .item-catalog .cat-comments {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5585,7 +5605,7 @@ body {
   min-width: 46px;
 }
 .item-catalog .cat-comments-total {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
   color: #b37542;
 }
@@ -5673,7 +5693,7 @@ body {
 }
 .elm-rates.rates-main .elm-rate {
   background-image: url(../img/spr.png);
-  background-position: -44px -175px;
+  background-position: -130px -175px;
   width: 23px;
   height: 23px;
   margin: 0 2px 0 0;
@@ -5683,7 +5703,7 @@ body {
 }
 .elm-rates.rates-main .elm-rate.rate-empty {
   background-image: url(../img/spr.png);
-  background-position: -218px -90px;
+  background-position: -87px -175px;
   width: 23px;
   height: 23px;
 }
@@ -5699,19 +5719,19 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -218px;
+  background-position: -80px -260px;
   width: 13px;
   height: 13px;
 }
 .elm-rate.rate-empty {
   background-image: url(../img/spr.png);
-  background-position: -228px -218px;
+  background-position: -231px -218px;
   width: 13px;
   height: 13px;
 }
 .elm-rate.rate-disabled {
   background-image: url(../img/spr.png);
-  background-position: -195px -218px;
+  background-position: -198px -218px;
   width: 13px;
   height: 13px;
 }
@@ -6127,7 +6147,7 @@ body {
     padding-right: 5px;
   }
   .item-catalog .cat-comments {
-    min-width: 55px;
+    min-width: 65px;
   }
   .item-catalog .cat-title {
     min-height: 40px;
@@ -6146,19 +6166,19 @@ body {
   }
   .elm-rate {
     background-image: url(../img/spr.png);
-    background-position: -261px -154px;
+    background-position: -266px -154px;
     width: 15px;
     height: 15px;
   }
   .elm-rate.rate-empty {
     background-image: url(../img/spr.png);
-    background-position: -261px -119px;
+    background-position: -266px -119px;
     width: 15px;
     height: 15px;
   }
   .elm-rate.rate-disabled {
     background-image: url(../img/spr.png);
-    background-position: -261px -49px;
+    background-position: -266px -49px;
     width: 15px;
     height: 15px;
   }
@@ -6368,7 +6388,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -27px -298px;
+  background-position: -340px -31px;
   width: 7px;
   height: 11px;
   position: absolute;
@@ -6409,7 +6429,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -121px -218px;
+  background-position: -219px -142px;
   width: 21px;
   height: 13px;
   position: absolute;
@@ -6438,7 +6458,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -64px -259px;
+  background-position: -113px -260px;
   width: 13px;
   height: 13px;
   position: absolute;
@@ -6599,19 +6619,19 @@ input[type="submit"].button-small {
 }
 .btn-action-ico.ico-cart:before {
   background-image: url(../img/spr.png);
-  background-position: -105px -79px;
+  background-position: -169px -48px;
   width: 29px;
   height: 27px;
 }
 .btn-action-ico.ico-search:before {
   background-image: url(../img/spr.png);
-  background-position: 0px -128px;
+  background-position: -219px -49px;
   width: 27px;
   height: 27px;
 }
 .btn-action-ico.ico-search-form:before {
   background-image: url(../img/spr.png);
-  background-position: -296px -165px;
+  background-position: -301px -165px;
   width: 17px;
   height: 17px;
 }
@@ -6623,13 +6643,13 @@ input[type="submit"].button-small {
 }
 .btn-action-ico.ico-user:before {
   background-image: url(../img/spr.png);
-  background-position: -218px 0px;
+  background-position: -49px -128px;
   width: 23px;
   height: 27px;
 }
 .btn-action-ico.ico-phone:before {
   background-image: url(../img/spr.png);
-  background-position: -169px 0px;
+  background-position: 0px -128px;
   width: 29px;
   height: 27px;
 }
@@ -6665,13 +6685,13 @@ input[type="submit"].button-small {
 }
 .btn-action-ico.ico-favorites:before {
   background-image: url(../img/spr.png);
-  background-position: -30px -259px;
+  background-position: -164px -218px;
   width: 14px;
   height: 14px;
 }
 .btn-action-ico.ico-favorites:after {
   background-image: url(../img/spr.png);
-  background-position: -162px -218px;
+  background-position: -169px -95px;
   width: 13px;
   height: 13px;
   opacity: 0;
@@ -6684,7 +6704,7 @@ input[type="submit"].button-small {
 }
 .btn-action-ico.ico-comments:before {
   background-image: url(../img/spr.png);
-  background-position: -121px -218px;
+  background-position: -219px -142px;
   width: 21px;
   height: 13px;
 }
@@ -6780,6 +6800,8 @@ input[type="submit"].button-small {
   position: relative;
   overflow: hidden;
   border: 3px solid #fff;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
 }
 .btn-action-cart:before {
   content: "";
@@ -6788,19 +6810,24 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: 0px -218px;
+  background-position: -42px -218px;
   width: 21px;
   height: 21px;
   position: absolute;
   left: 5px;
   top: 50%;
   margin-top: -11px;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
 }
 .btn-action-cart:hover {
-  color: #b37542;
-  opacity: 0.85;
+  background: #b37542;
   border-color: #b37542;
-  background: #f2e0c6;
+  color: #fff;
+}
+.btn-action-cart:hover:before {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 .btn-action-lang {
   display: -webkit-box;
@@ -6843,7 +6870,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -296px -87px;
+  background-position: -301px -87px;
   width: 19px;
   height: 19px;
   position: absolute;
@@ -6904,13 +6931,13 @@ input[type="submit"].button-small {
 }
 .frm-rate-set:hover .frm-rate {
   background-image: url(../img/spr.png) !important;
-  background-position: -261px -154px !important;
+  background-position: -266px -154px !important;
   width: 15px !important;
   height: 15px !important;
 }
 .frm-rate-set:hover .frm-rate:hover ~ .frm-rate {
   background-image: url(../img/spr.png) !important;
-  background-position: -261px -84px !important;
+  background-position: -266px -84px !important;
   width: 15px !important;
   height: 15px !important;
 }
@@ -6923,7 +6950,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -84px;
+  background-position: -266px -84px;
   width: 15px;
   height: 15px;
 }
@@ -6944,7 +6971,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -154px;
+  background-position: -266px -154px;
   width: 15px;
   height: 15px;
 }
@@ -6954,7 +6981,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -84px;
+  background-position: -266px -84px;
   width: 15px;
   height: 15px;
 }
@@ -6964,7 +6991,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -154px;
+  background-position: -266px -154px;
   width: 15px;
   height: 15px;
 }
@@ -6974,7 +7001,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -84px;
+  background-position: -266px -84px;
   width: 15px;
   height: 15px;
 }
@@ -6984,7 +7011,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -154px;
+  background-position: -266px -154px;
   width: 15px;
   height: 15px;
 }
@@ -6994,7 +7021,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -84px;
+  background-position: -266px -84px;
   width: 15px;
   height: 15px;
 }
@@ -7004,7 +7031,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -154px;
+  background-position: -266px -154px;
   width: 15px;
   height: 15px;
 }
@@ -7014,7 +7041,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -84px;
+  background-position: -266px -84px;
   width: 15px;
   height: 15px;
 }
@@ -7024,7 +7051,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -261px -154px;
+  background-position: -266px -154px;
   width: 15px;
   height: 15px;
 }
@@ -7102,7 +7129,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: 0px -298px;
+  background-position: -340px 0px;
   width: 7px;
   height: 11px;
   position: absolute;
@@ -7211,7 +7238,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -218px -47px;
+  background-position: -44px -175px;
   width: 23px;
   height: 23px;
   position: absolute;
@@ -7248,7 +7275,7 @@ input[type="submit"].button-small {
 }
 .frm-page-search .btn-action-ico.ico-search:before {
   background-image: url(../img/spr.png);
-  background-position: -93px -128px;
+  background-position: -92px -128px;
   width: 24px;
   height: 24px;
 }
@@ -7528,7 +7555,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -296px -202px;
+  background-position: -301px -202px;
   width: 16px;
   height: 16px;
   margin-top: -8px;
@@ -7604,7 +7631,7 @@ input[type="submit"].button-small {
   }
   .btn-action-ico.button-soc .icon-soc-fb {
     background-image: url(../img/spr.png);
-    background-position: -261px 0px;
+    background-position: -266px 0px;
     width: 15px;
     height: 29px;
   }
@@ -7622,7 +7649,7 @@ input[type="submit"].button-small {
   }
   .btn-action-ico.button-soc .icon-soc-gp {
     background-image: url(../img/spr.png);
-    background-position: -169px -47px;
+    background-position: -219px 0px;
     width: 27px;
     height: 29px;
   }
@@ -7652,7 +7679,7 @@ input[type="submit"].button-small {
   }
   .btn-action-comments:before {
     background-image: url(../img/spr.png);
-    background-position: -176px -175px;
+    background-position: -83px -218px;
     width: 25px;
     height: 17px;
     margin-top: -9px;
@@ -7669,43 +7696,43 @@ input[type="submit"].button-small {
   }
   .btn-action-ico.ico-search:before {
     background-image: url(../img/spr.png);
-    background-position: -296px -165px;
+    background-position: -301px -165px;
     width: 17px;
     height: 17px;
   }
   .btn-action-ico.ico-fav:before {
     background-image: url(../img/spr.png);
-    background-position: -137px -128px;
+    background-position: -136px -128px;
     width: 25px;
     height: 23px;
   }
   .btn-action-ico.ico-user:before {
     background-image: url(../img/spr.png);
-    background-position: -296px 0px;
+    background-position: -301px 0px;
     width: 19px;
     height: 23px;
   }
   .btn-action-ico.ico-phone:before {
     background-image: url(../img/spr.png);
-    background-position: -169px -96px;
+    background-position: -266px -228px;
     width: 14px;
     height: 12px;
   }
   .btn-action-ico.ico-favorites:before {
     background-image: url(../img/spr.png);
-    background-position: -221px -175px;
+    background-position: -128px -218px;
     width: 16px;
     height: 14px;
   }
   .btn-action-ico.ico-favorites:after {
     background-image: url(../img/spr.png);
-    background-position: -182px -128px;
+    background-position: -181px -128px;
     width: 16px;
     height: 14px;
   }
   .btn-action-ico.ico-comments:before {
     background-image: url(../img/spr.png);
-    background-position: -176px -175px;
+    background-position: -83px -218px;
     width: 25px;
     height: 17px;
   }
@@ -7726,7 +7753,7 @@ input[type="submit"].button-small {
   }
   .btn-action-cart:before {
     background-image: url(../img/spr.png);
-    background-position: -47px -128px;
+    background-position: -219px -96px;
     width: 26px;
     height: 26px;
     margin-top: -13px;
@@ -8048,13 +8075,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-arrow01 {
   background-image: url(../img/spr.png);
-  background-position: -97px -259px;
+  background-position: -146px -260px;
   width: 9px;
   height: 12px;
 }
 .icon-arrow02 {
   background-image: url(../img/spr.png);
-  background-position: -57px -49px;
+  background-position: -175px -260px;
   width: 11px;
   height: 8px;
 }
@@ -8066,85 +8093,85 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-arrow04 {
   background-image: url(../img/spr.png);
-  background-position: -54px -298px;
+  background-position: -340px -62px;
   width: 7px;
   height: 9px;
 }
 .icon-arrow05 {
   background-image: url(../img/spr.png);
-  background-position: -126px -259px;
+  background-position: 0px -300px;
   width: 9px;
   height: 9px;
 }
 .icon-arrow06 {
   background-image: url(../img/spr.png);
-  background-position: -155px -259px;
+  background-position: -206px -260px;
   width: 11px;
   height: 7px;
 }
 .icon-arrow07 {
   background-image: url(../img/spr.png);
-  background-position: 0px -298px;
+  background-position: -340px 0px;
   width: 7px;
   height: 11px;
 }
 .icon-arrow08 {
   background-image: url(../img/spr.png);
-  background-position: -41px -218px;
+  background-position: 0px -260px;
   width: 20px;
   height: 20px;
 }
 .icon-arrow09 {
   background-image: url(../img/spr.png);
-  background-position: -81px -218px;
+  background-position: -40px -260px;
   width: 20px;
   height: 20px;
 }
 .icon-arrow10 {
   background-image: url(../img/spr.png);
-  background-position: -27px -298px;
+  background-position: -340px -31px;
   width: 7px;
   height: 11px;
 }
 .icon-arrow11 {
   background-image: url(../img/spr.png);
-  background-position: -186px -259px;
+  background-position: -237px -260px;
   width: 11px;
   height: 7px;
 }
 .icon-arrow12 {
   background-image: url(../img/spr.png);
-  background-position: -81px -298px;
+  background-position: -340px -91px;
   width: 6px;
   height: 9px;
 }
 .icon-attention {
   background-image: url(../img/spr.png);
-  background-position: -218px -47px;
+  background-position: -44px -175px;
   width: 23px;
   height: 23px;
 }
 .icon-blank {
   background-image: url(../img/spr.png);
-  background-position: -296px -238px;
+  background-position: -340px -120px;
   width: 1px;
   height: 1px;
 }
 .icon-card-add-m {
   background-image: url(../img/spr.png);
-  background-position: 0px -218px;
+  background-position: -42px -218px;
   width: 21px;
   height: 21px;
 }
 .icon-cart-add {
   background-image: url(../img/spr.png);
-  background-position: -47px -128px;
+  background-position: -219px -96px;
   width: 26px;
   height: 26px;
 }
 .icon-cart-m {
   background-image: url(../img/spr.png);
-  background-position: -105px -79px;
+  background-position: -169px -48px;
   width: 29px;
   height: 27px;
 }
@@ -8156,49 +8183,49 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-chat-m {
   background-image: url(../img/spr.png);
-  background-position: -121px -218px;
+  background-position: -219px -142px;
   width: 21px;
   height: 13px;
 }
 .icon-chat {
   background-image: url(../img/spr.png);
-  background-position: -176px -175px;
+  background-position: -83px -218px;
   width: 25px;
   height: 17px;
 }
 .icon-check-form {
   background-image: url(../img/spr.png);
-  background-position: -296px -202px;
+  background-position: -301px -202px;
   width: 16px;
   height: 16px;
 }
 .icon-check {
   background-image: url(../img/spr.png);
-  background-position: -261px -189px;
+  background-position: -57px -49px;
   width: 11px;
   height: 9px;
 }
 .icon-fav-active-m {
   background-image: url(../img/spr.png);
-  background-position: -162px -218px;
+  background-position: -169px -95px;
   width: 13px;
   height: 13px;
 }
 .icon-fav-active {
   background-image: url(../img/spr.png);
-  background-position: -182px -128px;
+  background-position: -181px -128px;
   width: 16px;
   height: 14px;
 }
 .icon-fav-inactive-m {
   background-image: url(../img/spr.png);
-  background-position: -30px -259px;
+  background-position: -164px -218px;
   width: 14px;
   height: 14px;
 }
 .icon-fav-inactive {
   background-image: url(../img/spr.png);
-  background-position: -221px -175px;
+  background-position: -128px -218px;
   width: 16px;
   height: 14px;
 }
@@ -8208,105 +8235,117 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 30px;
   height: 28px;
 }
+.icon-fav-main-active {
+  background-image: url(../img/spr.png);
+  background-position: -105px -79px;
+  width: 30px;
+  height: 28px;
+}
+.icon-fav-main {
+  background-image: url(../img/spr.png);
+  background-position: -169px 0px;
+  width: 30px;
+  height: 28px;
+}
 .icon-fav {
   background-image: url(../img/spr.png);
-  background-position: -137px -128px;
+  background-position: -136px -128px;
   width: 25px;
   height: 23px;
 }
 .icon-info {
   background-image: url(../img/spr.png);
-  background-position: -296px -87px;
+  background-position: -301px -87px;
   width: 19px;
   height: 19px;
 }
 .icon-phone-m {
   background-image: url(../img/spr.png);
-  background-position: -169px 0px;
+  background-position: 0px -128px;
   width: 29px;
   height: 27px;
 }
 .icon-phone {
   background-image: url(../img/spr.png);
-  background-position: -169px -96px;
+  background-position: -266px -228px;
   width: 14px;
   height: 12px;
 }
 .icon-rate-disabled-m {
   background-image: url(../img/spr.png);
-  background-position: -195px -218px;
+  background-position: -198px -218px;
   width: 13px;
   height: 13px;
 }
 .icon-rate-disabled {
   background-image: url(../img/spr.png);
-  background-position: -261px -49px;
+  background-position: -266px -49px;
   width: 15px;
   height: 15px;
 }
 .icon-rate-empty-m {
   background-image: url(../img/spr.png);
-  background-position: -228px -218px;
+  background-position: -231px -218px;
   width: 13px;
   height: 13px;
 }
 .icon-rate-empty-main {
   background-image: url(../img/spr.png);
-  background-position: -218px -90px;
+  background-position: -87px -175px;
   width: 23px;
   height: 23px;
 }
 .icon-rate-empty-second {
   background-image: url(../img/spr.png);
-  background-position: -261px -84px;
+  background-position: -266px -84px;
   width: 15px;
   height: 15px;
 }
 .icon-rate-empty {
   background-image: url(../img/spr.png);
-  background-position: -261px -119px;
+  background-position: -266px -119px;
   width: 15px;
   height: 15px;
 }
 .icon-rate-full-m {
   background-image: url(../img/spr.png);
-  background-position: -261px -218px;
+  background-position: -80px -260px;
   width: 13px;
   height: 13px;
 }
 .icon-rate-full-main {
   background-image: url(../img/spr.png);
-  background-position: -44px -175px;
+  background-position: -130px -175px;
   width: 23px;
   height: 23px;
 }
 .icon-rate-full {
   background-image: url(../img/spr.png);
-  background-position: -261px -154px;
+  background-position: -266px -154px;
   width: 15px;
   height: 15px;
 }
 .icon-rate-up {
   background-image: url(../img/spr.png);
-  background-position: -64px -259px;
+  background-position: -113px -260px;
   width: 13px;
   height: 13px;
 }
 .icon-search-dark {
   background-image: url(../img/spr.png);
-  background-position: -93px -128px;
+  background-position: -92px -128px;
   width: 24px;
   height: 24px;
 }
 .icon-search-m {
   background-image: url(../img/spr.png);
-  background-position: 0px -128px;
+  background-position: -219px -49px;
   width: 27px;
   height: 27px;
 }
 .icon-search {
   background-image: url(../img/spr.png);
-  background-position: -296px -165px;
+  background-position: -301px -165px;
   width: 17px;
   height: 17px;
 }
@@ -8318,25 +8357,25 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-soc-fb-m {
   background-image: url(../img/spr.png);
-  background-position: -261px 0px;
+  background-position: -266px 0px;
   width: 15px;
   height: 29px;
 }
 .icon-soc-fb {
   background-image: url(../img/spr.png);
-  background-position: 0px -259px;
+  background-position: -266px -189px;
   width: 10px;
   height: 19px;
 }
 .icon-soc-gp-m {
   background-image: url(../img/spr.png);
-  background-position: -169px -47px;
+  background-position: -219px 0px;
   width: 27px;
   height: 29px;
 }
 .icon-soc-gp {
   background-image: url(../img/spr.png);
-  background-position: -296px -126px;
+  background-position: -301px -126px;
   width: 19px;
   height: 19px;
 }
@@ -8348,7 +8387,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-soc-inst {
   background-image: url(../img/spr.png);
-  background-position: -218px -133px;
+  background-position: 0px -218px;
   width: 22px;
   height: 22px;
 }
@@ -8360,7 +8399,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-soc-tg {
   background-image: url(../img/spr.png);
-  background-position: -133px -175px;
+  background-position: -219px -175px;
   width: 23px;
   height: 19px;
 }
@@ -8372,25 +8411,25 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-soc-yt {
   background-image: url(../img/spr.png);
-  background-position: -87px -175px;
+  background-position: -173px -175px;
   width: 26px;
   height: 20px;
 }
 .icon-user-att {
   background-image: url(../img/spr.png);
-  background-position: -296px -43px;
+  background-position: -301px -43px;
   width: 18px;
   height: 24px;
 }
 .icon-user-m {
   background-image: url(../img/spr.png);
-  background-position: -218px 0px;
+  background-position: -49px -128px;
   width: 23px;
   height: 27px;
 }
 .icon-user {
   background-image: url(../img/spr.png);
-  background-position: -296px 0px;
+  background-position: -301px 0px;
   width: 19px;
   height: 23px;
 }
