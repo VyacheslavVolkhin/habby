@@ -1,4 +1,24 @@
 $(document).ready(function(){
+
+    //phone masked
+    $('input[type="tel"]').mask("+7 (999) 999-99-99",{placeholder:"+3 (___) ___-__-__"});
+    $('input[type="tel"]').on('click', function() {
+        $(this).setCursorPosition(4);
+    })
+    $.fn.setCursorPosition = function(pos) {
+        this.each(function(index, elem) {
+            if (elem.setSelectionRange) {
+                elem.setSelectionRange(pos, pos);
+            } else if (elem.createTextRange) {
+                var range = elem.createTextRange();
+                range.collapse(true);
+                range.moveEnd('character', pos);
+                range.moveStart('character', pos);
+                range.select();
+            }
+        });
+        return this;
+    };
     
 
 	//popup block
@@ -202,7 +222,7 @@ $(document).ready(function(){
 
     //clients-box
     $('.clients-box .slider').slick({
-        dots: false,
+        dots: true,
         slidesToShow: 3,
         variableWidth: false,
         prevArrow: '<span class="btn-action-ico ico-arrow ico-arrow-prev"></span>',
@@ -214,7 +234,6 @@ $(document).ready(function(){
                     slidesToShow: 3,
                     infinite: true,
                     variableWidth: false,
-                    dots: false,
                     prevArrow: false,
                     nextArrow: false
                 }

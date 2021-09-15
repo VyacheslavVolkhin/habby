@@ -560,6 +560,236 @@ body {
   font-size: 27px;
   font-weight: 600;
 }
+.action-menu-wrap .action-menu-block {
+  display: none;
+  width: 370px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(38, 39, 42, 0.47);
+          box-shadow: 0px 0px 5px 0px rgba(38, 39, 42, 0.47);
+  z-index: 30;
+  overflow: hidden;
+}
+.action-menu-wrap .action-menu-block .menu-title-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: #eeeeee;
+  padding: 18px 50px 0 38px;
+}
+.action-menu-wrap .action-menu-block .menu-title-wrap .menu-title {
+  display: block;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 48px;
+}
+.action-menu-wrap .action-menu-block .menu-title-wrap .btn-action-ico.ico-close-small {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  z-index: 2;
+}
+.action-menu-wrap .menu-inner-wrap {
+  display: block;
+  padding: 20px 0;
+  min-height: 340px;
+}
+.action-menu-wrap .menu-inner-wrap a {
+  display: block;
+  position: relative;
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 10px 10px 66px;
+  text-transform: uppercase;
+}
+.action-menu-wrap .menu-actions-wrap {
+  display: block;
+  position: relative;
+  padding: 0 24px 24px 24px;
+}
+.action-menu-wrap .menu-actions-wrap .btn,
+.action-menu-wrap .menu-actions-wrap button,
+.action-menu-wrap .menu-actions-wrap input[type="submit"] {
+  width: 100%;
+  padding: 0;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.action-menu-wrap .elm-ico {
+  position: absolute;
+  top: 50%;
+  left: 46px;
+  margin: -20px 0 0 -20px;
+}
+.action-menu-wrap .elm-ico img {
+  max-width: 28px;
+  max-height: 28px;
+}
+.main-cart-wrap {
+  color: #000;
+}
+.main-cart-wrap .cart-block {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 360px;
+  background: #fff;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(38, 39, 42, 0.47);
+          box-shadow: 0px 0px 5px 0px rgba(38, 39, 42, 0.47);
+  z-index: 1000;
+}
+.main-cart-wrap .cart-title-wrap {
+  position: relative;
+  background: #eeeeee;
+  padding: 15px 50px 15px 35px;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.main-cart-wrap .cart-title-wrap .cart-title {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-cart-wrap .cart-title-wrap .btn-action-ico.ico-close-small {
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  margin-top: -20px;
+}
+.main-cart-wrap .cart-info-wrap {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 25px 35px;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.main-cart-wrap .cart-info-wrap p {
+  margin-bottom: 10px;
+}
+.main-cart-wrap .cart-items-wrap {
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.main-cart-wrap .cart-items-wrap:before,
+.main-cart-wrap .cart-items-wrap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background: #f2e0c6;
+}
+.main-cart-wrap .cart-items-wrap:before {
+  top: auto;
+  bottom: 0;
+}
+.main-cart-wrap .cart-items-inner {
+  max-height: 400px;
+  overflow: auto;
+  padding: 0 20px;
+}
+.main-cart-wrap .cart-order-wrap {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  padding: 28px 48px 28px 48px;
+}
+.main-cart-wrap .cart-total-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.main-cart-wrap .frm-row {
+  margin-bottom: 10px;
+  position: relative;
+}
+.main-cart-wrap .frm-row > label {
+  display: block;
+  font-size: 11px;
+  line-height: 16px;
+}
+.main-cart-wrap .submit-link {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 15px 0 0 0;
+  text-align: center;
+}
+.main-cart-wrap .submit-link a {
+  color: #000;
+  text-decoration: underline;
+}
+.main-cart-wrap .submit-link a:hover {
+  text-decoration: none;
+}
+.main-cart-wrap textarea,
+.main-cart-wrap input[type="text"],
+.main-cart-wrap input[type="password"],
+.main-cart-wrap input[type="email"],
+.main-cart-wrap input[type="number"],
+.main-cart-wrap input[type="range"],
+.main-cart-wrap input[type="search"],
+.main-cart-wrap input[type="tel"],
+.main-cart-wrap input[type="url"] {
+  height: 24px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #000;
+  border: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(38, 39, 42, 0.21);
+          box-shadow: 0px 0px 5px 0px rgba(38, 39, 42, 0.21);
+}
+.main-cart-wrap .btn,
+.main-cart-wrap button,
+.main-cart-wrap input[type="submit"] {
+  width: 100%;
+  height: 33px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.main-cart-wrap .cart-overlay {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.63);
+  -webkit-animation: fadein ease 0.2s;
+          animation: fadein ease 0.2s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.main-cart-wrap .js-btn-toggle.active ~ .cart-overlay {
+  display: block;
+}
 .logo {
   display: block;
   position: relative;
@@ -642,11 +872,15 @@ body {
     right: 0;
     z-index: 10;
   }
-  .header-main-panel .phone-title,
+  .header-main-panel .phone-title {
+    display: none;
+  }
+  .header-main-panel .phone-number,
   .header-main-panel .phone-button {
     display: none;
   }
-  .header-main-panel .phone-number a {
+  .header-main-panel .phone-number a,
+  .header-main-panel .phone-button a {
     display: block;
     width: 48px;
     height: 48px;
@@ -654,8 +888,22 @@ body {
     overflow: hidden;
     text-indent: -999px;
     font-size: 0;
+    border: none;
   }
-  .header-main-panel .phone-number a:before {
+  .header-main-panel .phone-number a:hover,
+  .header-main-panel .phone-button a:hover {
+    background: none !important;
+  }
+  .header-main-panel .phone-number a:after,
+  .header-main-panel .phone-button a:after,
+  .header-main-panel .phone-number a .button-ico,
+  .header-main-panel .phone-button a .button-ico,
+  .header-main-panel .phone-number a .button-title,
+  .header-main-panel .phone-button a .button-title {
+    display: none;
+  }
+  .header-main-panel .phone-number a:before,
+  .header-main-panel .phone-button a:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -671,6 +919,9 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+    display: block;
+  }
+  .header-main-panel .phone-button {
     display: block;
   }
   .header-main-panel .logo {
@@ -751,7 +1002,7 @@ body {
     -webkit-transition: none;
     transition: none;
     background-image: url(../img/spr.png);
-    background-position: -234px -218px;
+    background-position: -246px -262px;
     width: 9px;
     height: 12px;
     position: absolute;
@@ -1189,10 +1440,20 @@ body {
   }
   .header-main-panel .action-wrap {
     width: 48px;
+    position: relative;
   }
   .header-main-panel .action-wrap .btn-action-ico {
     width: 100%;
     height: 47px;
+  }
+  .header-main-panel .action-menu-wrap .action-menu-block {
+    left: auto;
+    right: 0;
+    top: 100%;
+    margin-top: 30px;
+  }
+  .header-main-panel .action-menu-wrap .action-menu-block .menu-title-wrap {
+    display: none;
   }
   .header-main-panel .phone-title {
     display: block;
@@ -1326,7 +1587,7 @@ body {
     -webkit-transition: none;
     transition: none;
     background-image: url(../img/spr.png);
-    background-position: -241px -260px;
+    background-position: -304px -262px;
     width: 11px;
     height: 8px;
     margin-left: 8px;
@@ -1347,6 +1608,40 @@ body {
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.popup-box {
+  color: #000000;
+}
+.popup-box.fancybox-content {
+  width: 440px;
+  background: #fff;
+  padding: 0;
+}
+.popup-box .popup-title-wrap {
+  display: block;
+  position: relative;
+  padding: 24px 50px 15px 35px;
+  font-size: 16px;
+  line-height: 1.1875;
+  font-weight: 300;
+}
+.popup-box .popup-content-wrap {
+  padding: 0 35px 24px 35px;
+  display: block;
+  position: relative;
+}
+.popup-box .popup-content-wrap:first-child {
+  padding-top: 35px;
+}
+.popup-box .popup-title {
+  display: block;
+  position: relative;
+  margin: 0 0 18px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.popup-box .popup-title:last-child {
+  margin-bottom: 0;
+}
 .lead-box {
   line-height: 1;
   position: relative;
@@ -1436,7 +1731,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -234px -218px;
+  background-position: -246px -262px;
   width: 9px;
   height: 12px;
   position: absolute;
@@ -3462,7 +3757,7 @@ body {
     -webkit-transition: none;
     transition: none;
     background-image: url(../img/spr.png);
-    background-position: -212px -260px;
+    background-position: -275px -262px;
     width: 9px;
     height: 12px;
     right: 12px;
@@ -3744,6 +4039,13 @@ body {
   .order-main-box .elm-price {
     font-size: 18px;
     line-height: 28px;
+  }
+}
+@media (max-width: 479px) {
+  .popup-box .popup-title-wrap,
+  .popup-box .popup-content-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -4273,7 +4575,8 @@ body {
     line-height: 30px;
   }
   .card-tabs-wrap {
-    margin: 0 0 25px 0;
+    margin: 0 0 15px 0;
+    padding-top: 20px;
   }
   .card-tabs-wrap ul {
     margin: 0 -30px 0 0;
@@ -4290,8 +4593,8 @@ body {
     height: 32px;
   }
   .card-fav-wrap {
-    padding-left: 20px;
-    margin-bottom: 15px;
+    padding-left: 0;
+    margin-bottom: 45px;
   }
   .card-category-wrap {
     padding-left: 20px;
@@ -4302,12 +4605,12 @@ body {
   .card-tab-wrap {
     font-size: 14px;
     line-height: 2.14285714;
-    padding-left: 20px;
-    margin-bottom: 35px;
+    padding-left: 0px;
+    margin-bottom: 65px;
   }
   .card-soc-wrap {
     margin: 0;
-    padding-left: 20px;
+    padding-left: 0px;
   }
   .card-desc-wrap {
     margin-bottom: 30px;
@@ -5004,6 +5307,71 @@ body {
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+.item-cart-mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  padding: 10px 60px 10px 0;
+  min-height: 70px;
+  overflow: hidden;
+  max-width: 100%;
+}
+.item-cart-mini .cart-photo-wrap {
+  width: 57px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.item-cart-mini .cart-info-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px 0 0;
+}
+.item-cart-mini .cart-counter-wrap {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 72px;
+}
+.item-cart-mini .elm-image {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+.item-cart-mini .cart-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+.item-cart-mini .btn-action-ico.ico-trash {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin: -20px 0 0 0;
+  z-index: 5;
+}
+.item-cart-mini .cart-title {
+  display: block;
+}
+.item-cart-mini .cart-count {
+  display: block;
+  font-weight: bold;
+}
+.item-cart-mini .frm-counter {
+  z-index: 5;
+}
 .item-action {
   display: block;
   position: relative;
@@ -5074,7 +5442,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -303px -260px;
+  background-position: -60px -302px;
   width: 11px;
   height: 7px;
   margin: 5px 0 0 10px;
@@ -5291,7 +5659,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: 0px -260px;
+  background-position: 0px -262px;
   width: 20px;
   height: 20px;
   -webkit-transition: all ease 0.2s;
@@ -5303,7 +5671,7 @@ body {
 }
 .item-faq .btn-faq:after {
   background-image: url(../img/spr.png);
-  background-position: -40px -260px;
+  background-position: -40px -262px;
   width: 20px;
   height: 20px;
   opacity: 0;
@@ -5573,7 +5941,7 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -272px -260px;
+  background-position: -29px -302px;
   width: 11px;
   height: 7px;
   position: absolute;
@@ -6020,7 +6388,7 @@ body {
 }
 .elm-rates.rates-main .elm-rate {
   background-image: url(../img/spr.png);
-  background-position: -130px -175px;
+  background-position: -173px -175px;
   width: 23px;
   height: 23px;
   margin: 0 2px 0 0;
@@ -6030,7 +6398,7 @@ body {
 }
 .elm-rates.rates-main .elm-rate.rate-empty {
   background-image: url(../img/spr.png);
-  background-position: -87px -175px;
+  background-position: -130px -175px;
   width: 23px;
   height: 23px;
 }
@@ -6046,19 +6414,19 @@ body {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -146px -260px;
+  background-position: -146px -262px;
   width: 13px;
   height: 13px;
 }
 .elm-rate.rate-empty {
   background-image: url(../img/spr.png);
-  background-position: -113px -260px;
+  background-position: -113px -262px;
   width: 13px;
   height: 13px;
 }
 .elm-rate.rate-disabled {
   background-image: url(../img/spr.png);
-  background-position: -80px -260px;
+  background-position: -80px -262px;
   width: 13px;
   height: 13px;
 }
@@ -6536,6 +6904,21 @@ input[type="url"] {
   font-size: 18px;
   color: #000;
 }
+select.inp-valid,
+textarea.inp-valid,
+input[type="text"].inp-valid,
+input[type="password"].inp-valid,
+input[type="email"].inp-valid,
+input[type="number"].inp-valid,
+input[type="range"].inp-valid,
+input[type="search"].inp-valid,
+input[type="tel"].inp-valid,
+input[type="url"].inp-valid {
+  background-image: url(../img/icons/valid.png) !important;
+  background-size: 8px auto !important;
+  background-position: right 8px center !important;
+  background-repeat: no-repeat !important;
+}
 textarea {
   height: 100px;
   padding-top: 10px;
@@ -6785,7 +7168,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -179px -260px;
+  background-position: -179px -262px;
   width: 13px;
   height: 13px;
   position: absolute;
@@ -6953,6 +7336,12 @@ input[type="submit"].button-small {
 .btn-action-ico.ico-menu:hover {
   background: #c48653;
 }
+.btn-action-ico.ico-trash:before {
+  background-image: url(../img/spr.png);
+  background-position: 0px -175px;
+  width: 23px;
+  height: 25px;
+}
 .btn-action-ico.ico-close:before {
   -webkit-transform: -webkit-rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -7031,7 +7420,7 @@ input[type="submit"].button-small {
 }
 .btn-action-ico.ico-favorites:before {
   background-image: url(../img/spr.png);
-  background-position: -200px -218px;
+  background-position: -266px -228px;
   width: 14px;
   height: 14px;
 }
@@ -7156,7 +7545,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -42px -218px;
+  background-position: -42px -220px;
   width: 21px;
   height: 21px;
   position: absolute;
@@ -7200,6 +7589,79 @@ input[type="submit"].button-small {
   line-height: 23px;
   font-size: 21px;
   color: #b37542;
+}
+.frm-popup .frm-row {
+  margin-bottom: 8px;
+}
+.frm-popup .frm-row > label {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 5px 0;
+}
+.frm-popup .frm-row-submit {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+.frm-popup .frm-row-submit:after {
+  display: none;
+}
+.frm-popup .frm-row-submit .submit-button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.frm-popup .frm-row-submit .submit-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 10px;
+}
+.frm-popup .frm-row-submit .submit-info a {
+  color: inherit;
+  text-decoration: underline;
+}
+.frm-popup .frm-row-submit .submit-info a:hover {
+  text-decoration: none;
+}
+.frm-popup textarea,
+.frm-popup input[type="text"],
+.frm-popup input[type="password"],
+.frm-popup input[type="email"],
+.frm-popup input[type="number"],
+.frm-popup input[type="range"],
+.frm-popup input[type="search"],
+.frm-popup input[type="tel"],
+.frm-popup input[type="url"] {
+  height: 53px;
+  border: 1px solid #e5e5e5;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.frm-popup textarea {
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.frm-popup .btn,
+.frm-popup button,
+.frm-popup input[type="submit"] {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+.frm-req {
+  display: inline;
+  color: #ff0000;
 }
 .frm-info {
   display: block;
@@ -7444,6 +7906,33 @@ input[type="submit"].button-small {
   padding: 0;
   text-align: center;
 }
+.frm-counter.counter-small {
+  width: 72px;
+  height: 30px;
+  background: #f2e0c6;
+  padding: 0 20px;
+}
+.frm-counter.counter-small .btn-action-ico.ico-plus,
+.frm-counter.counter-small .btn-action-ico.ico-minus {
+  width: 24px;
+  height: 30px;
+}
+.frm-counter.counter-small .btn-action-ico.ico-plus:before,
+.frm-counter.counter-small .btn-action-ico.ico-minus:before,
+.frm-counter.counter-small .btn-action-ico.ico-plus:after,
+.frm-counter.counter-small .btn-action-ico.ico-minus:after {
+  width: 8px;
+  height: 2px;
+  margin: -1px 0 0 -4px;
+  background: #000;
+}
+.frm-counter.counter-small .counter-value {
+  height: 30px;
+  line-height: 30px;
+  font-size: 19px;
+  font-weight: 400;
+  color: #000;
+}
 .frm-select-wrap {
   line-height: 1;
   position: relative;
@@ -7584,7 +8073,7 @@ input[type="submit"].button-small {
   -webkit-transition: none;
   transition: none;
   background-image: url(../img/spr.png);
-  background-position: -44px -175px;
+  background-position: -87px -175px;
   width: 23px;
   height: 23px;
   position: absolute;
@@ -8003,6 +8492,42 @@ input[type="submit"].button-small {
   background: #9d8b71;
   color: #fff;
 }
+body .fancybox-button.fancybox-close-small {
+  width: 30px;
+  height: 30px;
+  background: #543029;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 1;
+}
+body .fancybox-button.fancybox-close-small:hover {
+  background: #320e07;
+}
+body .fancybox-button.fancybox-close-small:after,
+body .fancybox-button.fancybox-close-small:before {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1px 0 0 -10px;
+  -webkit-transform: -webkit-rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+body .fancybox-button.fancybox-close-small:before {
+  -webkit-transform: -webkit-rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+body .fancybox-button.fancybox-close-small * {
+  display: none;
+}
 body .ui-slider {
   height: 3px;
   background: #fff;
@@ -8101,6 +8626,21 @@ body .ui-slider .ui-slider-handle {
     height: 29px;
   }
 }
+@media (max-width: 479px) {
+  .frm-popup .frm-row-submit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .frm-popup .frm-row-submit .submit-button {
+    width: 100%;
+  }
+  .frm-popup .frm-row-submit .submit-info {
+    width: 100%;
+    padding: 0 0 10px 0;
+  }
+}
 @media (min-width: 1024px) {
   .btn,
   button,
@@ -8127,7 +8667,7 @@ body .ui-slider .ui-slider-handle {
   }
   .btn-action-comments:before {
     background-image: url(../img/spr.png);
-    background-position: -83px -218px;
+    background-position: -126px -220px;
     width: 25px;
     height: 17px;
     margin-top: -9px;
@@ -8138,7 +8678,7 @@ body .ui-slider .ui-slider-handle {
   }
   .btn-action-ico.ico-cart:before {
     background-image: url(../img/spr.png);
-    background-position: 0px -175px;
+    background-position: -43px -175px;
     width: 24px;
     height: 23px;
   }
@@ -8162,25 +8702,25 @@ body .ui-slider .ui-slider-handle {
   }
   .btn-action-ico.ico-phone:before {
     background-image: url(../img/spr.png);
-    background-position: -266px -228px;
+    background-position: -212px -262px;
     width: 14px;
     height: 12px;
   }
   .btn-action-ico.ico-favorites:before {
     background-image: url(../img/spr.png);
-    background-position: -164px -218px;
+    background-position: -207px -220px;
     width: 16px;
     height: 14px;
   }
   .btn-action-ico.ico-favorites:after {
     background-image: url(../img/spr.png);
-    background-position: -128px -218px;
+    background-position: -171px -220px;
     width: 16px;
     height: 14px;
   }
   .btn-action-ico.ico-comments:before {
     background-image: url(../img/spr.png);
-    background-position: -83px -218px;
+    background-position: -126px -220px;
     width: 25px;
     height: 17px;
   }
@@ -8190,7 +8730,7 @@ body .ui-slider .ui-slider-handle {
   }
   .btn-action-lang .button-title {
     height: 22px;
-    line-height: 20px;
+    line-height: 18px;
     font-size: 17px;
   }
   .btn-action-cart {
@@ -8523,13 +9063,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-arrow01 {
   background-image: url(../img/spr.png);
-  background-position: -234px -218px;
+  background-position: -246px -262px;
   width: 9px;
   height: 12px;
 }
 .icon-arrow02 {
   background-image: url(../img/spr.png);
-  background-position: -241px -260px;
+  background-position: -304px -262px;
   width: 11px;
   height: 8px;
 }
@@ -8547,13 +9087,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-arrow05 {
   background-image: url(../img/spr.png);
-  background-position: 0px -300px;
+  background-position: 0px -302px;
   width: 9px;
   height: 9px;
 }
 .icon-arrow06 {
   background-image: url(../img/spr.png);
-  background-position: -272px -260px;
+  background-position: -29px -302px;
   width: 11px;
   height: 7px;
 }
@@ -8565,13 +9105,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-arrow08 {
   background-image: url(../img/spr.png);
-  background-position: 0px -260px;
+  background-position: 0px -262px;
   width: 20px;
   height: 20px;
 }
 .icon-arrow09 {
   background-image: url(../img/spr.png);
-  background-position: -40px -260px;
+  background-position: -40px -262px;
   width: 20px;
   height: 20px;
 }
@@ -8583,7 +9123,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-arrow11 {
   background-image: url(../img/spr.png);
-  background-position: -303px -260px;
+  background-position: -60px -302px;
   width: 11px;
   height: 7px;
 }
@@ -8595,13 +9135,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-arrow13 {
   background-image: url(../img/spr.png);
-  background-position: -212px -260px;
+  background-position: -275px -262px;
   width: 9px;
   height: 12px;
 }
 .icon-attention {
   background-image: url(../img/spr.png);
-  background-position: -44px -175px;
+  background-position: -87px -175px;
   width: 23px;
   height: 23px;
 }
@@ -8613,7 +9153,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-card-add-m {
   background-image: url(../img/spr.png);
-  background-position: -42px -218px;
+  background-position: -42px -220px;
   width: 21px;
   height: 21px;
 }
@@ -8631,7 +9171,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-cart {
   background-image: url(../img/spr.png);
-  background-position: 0px -175px;
+  background-position: -43px -175px;
   width: 24px;
   height: 23px;
 }
@@ -8643,7 +9183,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-chat {
   background-image: url(../img/spr.png);
-  background-position: -83px -218px;
+  background-position: -126px -220px;
   width: 25px;
   height: 17px;
 }
@@ -8673,19 +9213,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-fav-active {
   background-image: url(../img/spr.png);
-  background-position: -128px -218px;
+  background-position: -171px -220px;
   width: 16px;
   height: 14px;
 }
 .icon-fav-inactive-m {
   background-image: url(../img/spr.png);
-  background-position: -200px -218px;
+  background-position: -266px -228px;
   width: 14px;
   height: 14px;
 }
 .icon-fav-inactive {
   background-image: url(../img/spr.png);
-  background-position: -164px -218px;
+  background-position: -207px -220px;
   width: 16px;
   height: 14px;
 }
@@ -8727,13 +9267,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-phone {
   background-image: url(../img/spr.png);
-  background-position: -266px -228px;
+  background-position: -212px -262px;
   width: 14px;
   height: 12px;
 }
 .icon-rate-disabled-m {
   background-image: url(../img/spr.png);
-  background-position: -80px -260px;
+  background-position: -80px -262px;
   width: 13px;
   height: 13px;
 }
@@ -8745,13 +9285,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-rate-empty-m {
   background-image: url(../img/spr.png);
-  background-position: -113px -260px;
+  background-position: -113px -262px;
   width: 13px;
   height: 13px;
 }
 .icon-rate-empty-main {
   background-image: url(../img/spr.png);
-  background-position: -87px -175px;
+  background-position: -130px -175px;
   width: 23px;
   height: 23px;
 }
@@ -8769,13 +9309,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-rate-full-m {
   background-image: url(../img/spr.png);
-  background-position: -146px -260px;
+  background-position: -146px -262px;
   width: 13px;
   height: 13px;
 }
 .icon-rate-full-main {
   background-image: url(../img/spr.png);
-  background-position: -130px -175px;
+  background-position: -173px -175px;
   width: 23px;
   height: 23px;
 }
@@ -8787,7 +9327,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-rate-up {
   background-image: url(../img/spr.png);
-  background-position: -179px -260px;
+  background-position: -179px -262px;
   width: 13px;
   height: 13px;
 }
@@ -8847,7 +9387,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-soc-inst {
   background-image: url(../img/spr.png);
-  background-position: 0px -218px;
+  background-position: 0px -220px;
   width: 22px;
   height: 22px;
 }
@@ -8859,7 +9399,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-soc-tg {
   background-image: url(../img/spr.png);
-  background-position: -219px -175px;
+  background-position: -83px -220px;
   width: 23px;
   height: 19px;
 }
@@ -8871,9 +9411,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-soc-yt {
   background-image: url(../img/spr.png);
-  background-position: -173px -175px;
+  background-position: -216px -175px;
   width: 26px;
   height: 20px;
+}
+.icon-trash {
+  background-image: url(../img/spr.png);
+  background-position: 0px -175px;
+  width: 23px;
+  height: 25px;
 }
 .icon-user-att {
   background-image: url(../img/spr.png);

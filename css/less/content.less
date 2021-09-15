@@ -1,6 +1,40 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.popup-box {
+    color: #000000;
+    &.fancybox-content {
+        width: 440px;
+        background: #fff;
+        padding: 0;
+    }
+    .popup-title-wrap {
+        display: block;
+        position: relative;
+        padding: 24px 50px 15px 35px;
+        font-size: 16px;
+        line-height: 19/16;
+        font-weight: 300;
+    }
+    .popup-content-wrap {
+        padding: 0 35px 24px 35px;
+        display: block;
+        position: relative;
+        &:first-child {
+            padding-top: 35px;
+        }
+    }
+    .popup-title {
+        display: block;
+        position: relative;
+        margin: 0 0 18px 0;
+        font-size: 18px;
+        font-weight: bold;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
 .lead-box {
     line-height: 1;
     position: relative;
@@ -2220,6 +2254,14 @@
         }
     }
 }
+@media (max-width: 479px) {
+    .popup-box {
+        .popup-title-wrap, .popup-content-wrap {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
     .clients-box {
         .slider-wrap {
@@ -2752,7 +2794,8 @@
         }
     }
     .card-tabs-wrap {
-        margin: 0 0 25px 0;
+        margin: 0 0 15px 0;
+        padding-top: 20px;
         ul {
             margin: 0 -30px 0 0;
         }
@@ -2769,8 +2812,8 @@
         }
     }
     .card-fav-wrap {
-        padding-left: 20px;
-        margin-bottom: 15px;
+        padding-left: 0;
+        margin-bottom: 45px;
     }
     .card-category-wrap {
         padding-left: 20px;
@@ -2781,12 +2824,12 @@
     .card-tab-wrap {
         font-size: 14px;
         line-height: 30/14;
-        padding-left: 20px;
-        margin-bottom: 35px;
+        padding-left: 0px;
+        margin-bottom: 65px;
     }
     .card-soc-wrap {
         margin: 0;
-        padding-left: 20px;
+        padding-left: 0px;
     }
     .card-desc-wrap {
         margin-bottom: 30px;

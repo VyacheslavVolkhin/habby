@@ -17,6 +17,12 @@ input[type="url"] {
     padding: 0 10px 0 20px;
     font-size: 18px;
     color: #000;
+    &.inp-valid {
+        background-image: url(../img/icons/valid.png) !important;
+        background-size: 8px auto !important;
+        background-position: right 8px center !important;
+        background-repeat: no-repeat !important;
+    }
 }
 textarea {
     height: 100px;
@@ -370,6 +376,11 @@ input[type="submit"] {
             background: #b37542 + #111;
         }
     }
+    &.ico-trash {
+        &:before {
+            .icon-trash;
+        }
+    }
     &.ico-close {
         &:before {
             .t-rotate(45deg);
@@ -588,6 +599,74 @@ input[type="submit"] {
         color: #b37542;
     }
 }
+.frm-popup {
+    .frm-row {
+        margin-bottom: 8px;
+        &>label {
+            display: block;
+            font-size: 18px;
+            line-height: 22px;
+            margin: 0 0 5px 0;
+        }
+    }
+    .frm-row-submit {
+        padding-top: 15px;
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        &:after {
+            display: none;
+        }
+        .submit-button {
+            flex-shrink: 0;
+        }
+        .submit-info {
+            flex: 1;
+            font-size: 14px;
+            line-height: 17px;
+            padding-left: 10px;
+            a {
+                color: inherit;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    input[type="range"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"] {
+        height: 53px;
+        border: 1px solid #e5e5e5;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    textarea {
+    	height: 100px;
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+    }
+    .btn,
+    button,
+    input[type="submit"] {
+    	padding: 0 20px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+    }
+}
+.frm-req {
+    display: inline;
+    color: #ff0000;
+}
 .frm-info {
     display: block;
     position: relative;
@@ -751,6 +830,31 @@ input[type="submit"] {
         line-height: 55px;
         padding: 0;
         text-align: center;
+    }
+    &.counter-small {
+        width: 72px;
+        height: 30px;
+        background: #f2e0c6;
+        padding: 0 20px;
+        .btn-action-ico {
+            &.ico-plus, &.ico-minus {
+                width: 24px;
+                height: 30px;
+                &:before, &:after {
+                    width: 8px;
+                    height: 2px;
+                    margin: -1px 0 0 -4px;
+                    background: #000;
+                }
+            }
+        }
+        .counter-value {
+            height: 30px;
+            line-height: 30px;
+            font-size: 19px;
+            font-weight: 400;
+            color: #000;
+        }
     }
 }
 .frm-select-wrap {
@@ -1243,6 +1347,37 @@ input[type="submit"] {
     }
 }
 body {
+    .fancybox-button.fancybox-close-small {
+        width: 30px;
+        height: 30px;
+        background: #543029;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        opacity: 1;
+        &:hover {
+            background: #543029 - #222;
+        }
+        &:after, &:before {
+            content: "";
+            display: block;
+            background: #fff;
+            width: 20px;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -1px 0 0 -10px;
+            .t-rotate(45deg);
+        }
+        &:before {
+            .t-rotate(-45deg);
+        }
+        * {
+            display: none;
+        }
+    }
     .ui-slider {
         height: 3px;
         background: #fff;
@@ -1334,6 +1469,20 @@ body {
         }
     }
 }
+@media (max-width: 479px) {
+    .frm-popup {
+        .frm-row-submit {
+            flex-direction: column-reverse;
+            .submit-button {
+                width: 100%;
+            }
+            .submit-info {
+                width: 100%;
+                padding: 0 0 10px 0;
+            }
+        }
+    }
+}
 @media (min-width: 1024px) {
     .btn,
     button,
@@ -1409,7 +1558,7 @@ body {
         height: 52px;
         .button-title {
             height: 22px;
-            line-height: 20px;
+            line-height: 18px;
             font-size: 17px;
         }
     }

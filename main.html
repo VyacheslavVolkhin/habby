@@ -54,7 +54,7 @@
                                 </div>
                             </div>
                             <div class="phone-button">
-                                <a href="" class="btn button-light button-border">
+                                <a href="" class="btn button-light button-border" data-fancybox data-src="#popup-callback">
                                     <span class="button-ico">
                                         <span class="i icon-phone"></span>
                                     </span>
@@ -78,7 +78,7 @@
                             </div>
                             <div class="action-wrap action-lang">
                                 <a href="" class="btn-action-lang">
-                                    <span class="button-title">UA</span>
+                                    <span class="button-title">RU</span>
                                 </a>
                             </div>
                         </div>
@@ -1923,12 +1923,40 @@
         </footer>
         <!-- /footer -->
 
+
+        <div id="popup-callback" class="popup-box" style="display: none;">
+            <div class="popup-title-wrap">
+                <div class="popup-title">Зворотный дзвінок</div>
+                <div class="popup-title-text">Вкажіть ім'я та контактний телефон. Найближчим часом наш менеджер вам передзвонить.</div>
+            </div>
+            <div class="popup-content-wrap">
+                <form action="/" class="frm-popup">
+                    <div class="frm-row">
+                        <label>Ваше ім'я <span class="frm-req">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="frm-row">
+                        <label>Контактний телефон <span class="frm-req">*</span></label>
+                        <input type="tel">
+                    </div>
+                    <div class="frm-row-submit">
+                        <div class="submit-button">
+                            <input type="submit" value="Надіслати">
+                        </div>
+                        <div class="submit-info">Натискаючи кнопку «Надіслати» ви
+                            приймаєте умови <a href="">Публічної оферти </a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </div>
     <!-- /wrap -->
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/jquery.ui.touch-punch.min.js"></script>
     <script src="./js/scripts.js"></script>
