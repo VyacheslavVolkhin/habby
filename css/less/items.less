@@ -12,6 +12,13 @@
     min-height: 70px;
     overflow: hidden;
     max-width: 100%;
+    transition: all ease 0.2s;
+    max-height: 100px;
+    &.deleted {
+        max-height: 0;
+        min-height: 0;
+        padding: 0;
+    }
     .cart-photo-wrap {
         width: 57px;
         flex-shrink: 0;

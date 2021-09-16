@@ -4697,6 +4697,24 @@ body {
         -ms-flex: 1;
             flex: 1;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-info-wrap > div,
+  .card-info-wrap > section {
+    width: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .card-info-wrap .card-sep {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .photos-slider-box .slider-wrap {
     margin-bottom: 20px;
@@ -5322,6 +5340,14 @@ body {
   min-height: 70px;
   overflow: hidden;
   max-width: 100%;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  max-height: 100px;
+}
+.item-cart-mini.deleted {
+  max-height: 0;
+  min-height: 0;
+  padding: 0;
 }
 .item-cart-mini .cart-photo-wrap {
   width: 57px;

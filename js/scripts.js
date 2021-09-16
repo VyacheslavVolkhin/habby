@@ -106,6 +106,13 @@ $(document).ready(function(){
 			$(this).addClass('active').next('.js-tab-content').slideDown(200);
 		}
 	})
+    
+    
+    //cart del
+    $('.item-cart-mini .ico-trash').on('click', function() {
+        $(this).parent('.item-cart-mini').addClass('deleted');
+        return false;
+    })
 
     //btn tgl
     $('.js-btn-tgl').on('click', function () {
@@ -147,6 +154,16 @@ $(document).ready(function(){
         e.preventDefault();
         return false;
     });
+    
+    //rate
+    $('.btn-action-rate').on('click', function() {
+        if (parseInt($(this).text())>0) {
+            $(this).text(parseInt($(this).text()) + 1);
+        } else {
+            $(this).text(1);
+        }
+        return false;
+    })
     
     
     //item-video
