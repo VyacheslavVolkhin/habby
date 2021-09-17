@@ -522,13 +522,13 @@
                                     </a>
                                     <div class="order-block js-popup-block">
                                         <div class="order-form-wrap">
-                                            <div class="form-select-wrap">
+                                            <div class="form-select-wrap js-tabs-nav">
                                                 <ul>
-                                                    <li><a href="" class="active">Новий покупець</a></li>
-                                                    <li><a href="">Постіний клієнт</a></li>
+                                                    <li><a data-tab="user01" href="" class="active">Новий покупець</a></li>
+                                                    <li><a data-tab="user02" href="">Постіний клієнт</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="form-main-wrap">
+                                            <div class="form-main-wrap js-tab-block" data-tab="user01">
                                                 <div class="frm-row">
                                                     <div class="field-input-wrap">
                                                         <div class="frm-field-input js-input">
@@ -582,6 +582,30 @@
                                                         <label for="order">Я приймаю умови угоди</label>
                                                     </div>
                                                     <a href="" class="btn">Продовжити</a>
+                                                </div>
+                                            </div>
+                                            <div class="form-main-wrap js-tab-block" data-tab="user02">
+                                                <div class="frm-row">
+                                                    <div class="field-input-wrap">
+                                                        <div class="frm-field-input js-input">
+                                                            <input type="email" value="" class="field-input" placeholder="">
+                                                            <label>Email <span class="frm-req">*</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frm-row">
+                                                    <div class="field-input-wrap">
+                                                        <div class="frm-field-input js-input">
+                                                            <input type="text" value="" class="field-input">
+                                                            <label>Пароль <span class="frm-req">*</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frm-row-submit submit-row">
+                                                    <div class="submit-button"><a href="" class="btn">Увійти</a></div>
+                                                    <div class="submit-link">
+                                                        <a href="" class="link-main">Забули пароль?</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

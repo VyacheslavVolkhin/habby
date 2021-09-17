@@ -1318,6 +1318,21 @@
                 width: 100%;
             }
         }
+        .submit-row {
+            display: flex;
+            align-items: center;
+            .submit-button {
+                width: auto;
+                flex-shrink: 0;
+                margin: 0;
+                padding: 0 20px 0 0;
+                min-width: 234px;
+            }
+            .submit-link {
+                flex: 1;
+                max-width: 226px;
+            }
+        }
     }
     .frm-text {
         font-size: 16px;
@@ -1465,6 +1480,15 @@
         input[type="submit"] {
             width: 100%;
             font-size: 18px;
+        }
+    }
+    
+    .submit-link {
+        text-align: center;
+        font-size: 18px;
+        color: #543029;
+        a {
+            color: #543029;
         }
     }
     textarea {

@@ -873,7 +873,7 @@ body {
     display: none;
   }
   .header-main-panel .search-wrap {
-    width: 55px;
+    width: 64px;
   }
   .header-main-panel .phone-wrap {
     width: 55px;
@@ -3067,6 +3067,28 @@ body {
 .order-total-box .form-main-wrap .frm-row-submit input[type="submit"] {
   width: 100%;
 }
+.order-total-box .form-main-wrap .submit-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.order-total-box .form-main-wrap .submit-row .submit-button {
+  width: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0;
+  padding: 0 20px 0 0;
+  min-width: 234px;
+}
+.order-total-box .form-main-wrap .submit-row .submit-link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 226px;
+}
 .order-total-box .frm-text {
   font-size: 16px;
   line-height: 1.5;
@@ -3225,6 +3247,14 @@ body {
 .order-total-box .submit-button input[type="submit"] {
   width: 100%;
   font-size: 18px;
+}
+.order-total-box .submit-link {
+  text-align: center;
+  font-size: 18px;
+  color: #543029;
+}
+.order-total-box .submit-link a {
+  color: #543029;
 }
 .order-total-box textarea {
   height: 135px;
