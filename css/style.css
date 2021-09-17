@@ -346,6 +346,20 @@ body {
 .header {
   z-index: 99;
 }
+.header-main-panel .action-lang {
+  position: relative;
+}
+.header-main-panel .action-lang .action-block {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: -18px;
+}
+.header-main-panel .action-lang .action-block .btn-action-lang .button-title {
+  background: #fff;
+}
 .footer {
   overflow: hidden;
   background: #543029;
@@ -859,10 +873,10 @@ body {
     display: none;
   }
   .header-main-panel .search-wrap {
-    width: 48px;
+    width: 55px;
   }
   .header-main-panel .phone-wrap {
-    width: 48px;
+    width: 55px;
   }
   .header-main-panel .search-block {
     display: none;
@@ -930,6 +944,9 @@ body {
   .header-main-panel .btn-action-ico {
     width: 55px;
     height: 48px;
+  }
+  .header-main-panel .btn-action-lang {
+    width: 55px;
   }
   .header-nav-panel {
     position: absolute;
@@ -2043,6 +2060,45 @@ body {
   color: #543129;
   border-color: #694a44;
 }
+.new-box {
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 300;
+  color: #543129;
+  margin-bottom: 50px;
+}
+.new-box .new-photo {
+  float: left;
+  width: 49%;
+  margin: 0 28px 20px 0;
+  display: block;
+}
+.new-box .new-photo img {
+  display: block;
+  width: 100%;
+}
+.new-box h2,
+.new-box h3 {
+  display: block;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #543129;
+  margin: 0 0 5px 0;
+  text-transform: none;
+}
+.new-box h2 + p,
+.new-box h3 + p {
+  margin-top: 24px;
+}
+.new-box .new-date {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+.new-box p {
+  margin-bottom: 20px;
+}
 .news-box {
   margin-bottom: 40px;
   margin-bottom: 0;
@@ -3011,6 +3067,11 @@ body {
 .order-total-box .form-main-wrap .frm-row-submit input[type="submit"] {
   width: 100%;
 }
+.order-total-box .frm-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #543029;
+}
 .order-total-box .frm-help,
 .order-total-box .frm-help-second {
   padding-left: 10px;
@@ -3612,7 +3673,7 @@ body {
   display: none;
 }
 .main-title-box .elm-tag {
-  margin: 0 20px;
+  margin: 0 12px;
 }
 .main-slider-box {
   margin-bottom: 30px;
@@ -3641,6 +3702,16 @@ body {
   right: 44px;
 }
 @media (max-width: 1023px) {
+  .new-box .new-photo {
+    width: 40%;
+  }
+  .card-tabs-wrap a {
+    font-size: 16px;
+  }
+  .card-tabs-wrap a .button-ico {
+    width: 22px;
+    height: 22px;
+  }
   .filter-show .filter-box {
     display: block;
   }
@@ -4031,6 +4102,10 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .new-box .new-photo {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
   .order-main-box table th,
   .order-main-box table td {
     font-size: 12px;

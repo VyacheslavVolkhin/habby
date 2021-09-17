@@ -351,10 +351,15 @@
                             <div class="action-wrap action-user">
                                 <a href="" class="btn-action-ico ico-user"></a>
                             </div>
-                            <div class="action-wrap action-lang">
-                                <a href="" class="btn-action-lang">
+                            <div class="action-wrap action-lang js-popup-wrap">
+                                <a href="" class="btn-action-lang js-btn-toggle">
                                     <span class="button-title">UA</span>
                                 </a>
+                                <div class="action-block js-popup-block">
+                                    <a href="" class="btn-action-lang">
+                                        <span class="button-title">RU</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="soc-wrap">
@@ -592,33 +597,64 @@
                                     </a>
                                     <div class="order-block js-popup-block">
                                         <div class="delivery-info-wrap">
-                                            <div class="delivery-select-wrap">
+                                            <div class="delivery-select-wrap js-tabs-nav">
                                                 <ul>
-                                                    <li><a href="" class="active">Самовивіз</a></li>
-                                                    <li><a href="">Кур’єром по Київу</a></li>
-                                                    <li><a href="">Нова Пошта</a></li>
+                                                    <li><a data-tab="del01" href="" class="active">Самовивіз</a></li>
+                                                    <li><a data-tab="del02" href="">Кур’єром по Київу</a></li>
+                                                    <li><a data-tab="del03" href="">Нова Пошта</a></li>
                                                 </ul>
                                             </div>
                                             <div class="delivery-wrap">
-                                                <div class="frm-row">
-                                                    <div class="frm-field field-full">
-                                                        <input type="text" placeholder="Вулиця">
+                                                <div class="js-tab-block" data-tab="del01">
+                                                    <div class="frm-row">
+                                                        <div class="frm-field field-full">
+                                                            <input type="text" placeholder="№16, просп. Миру 30А">
+                                                        </div>
+                                                    </div>
+                                                    <div class="frm-row">
+                                                        <div class="frm-field field-full">
+                                                            <div class="frm-text">Пн - Сб: 9:00 - 17:00 <br>Вс: Вихідний</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="frm-row-submit">
+                                                        <a href="" class="btn">Далі</a>
                                                     </div>
                                                 </div>
-                                                <div class="frm-row">
-                                                    <div class="frm-field">
-                                                        <input type="text" placeholder="№ будинку">
+                                                <div class="js-tab-block" data-tab="del02">
+                                                    <div class="frm-row">
+                                                        <div class="frm-field field-full">
+                                                            <input type="text" placeholder="Вулиця">
+                                                        </div>
                                                     </div>
-                                                    <div class="frm-field">
-                                                        <input type="text" placeholder="№ квартири">
+                                                    <div class="frm-row">
+                                                        <div class="frm-field">
+                                                            <input type="text" placeholder="№ будинку">
+                                                        </div>
+                                                        <div class="frm-field">
+                                                            <input type="text" placeholder="№ квартири">
+                                                        </div>
+                                                    </div>
+                                                    <div class="frm-row-submit">
+                                                        <div class="frm-select">
+                                                            <input type="checkbox" id="del">
+                                                            <label for="del">Вартість доставки 50 грн</label>
+                                                        </div>
+                                                        <a href="" class="btn">Далі</a>
                                                     </div>
                                                 </div>
-                                                <div class="frm-row-submit">
-                                                    <div class="frm-select">
-                                                        <input type="checkbox" id="del">
-                                                        <label for="del">Вартість доставки 50 грн</label>
+                                                <div class="js-tab-block" data-tab="del03">
+                                                    <div class="frm-row">
+                                                        <div class="frm-field field-full">
+                                                            <input type="text" placeholder="Введіть адресу або номер відділення">
+                                                        </div>
                                                     </div>
-                                                    <a href="" class="btn">Далі</a>
+                                                    <div class="frm-row-submit">
+                                                        <div class="frm-select">
+                                                            <input type="checkbox" id="del2">
+                                                            <label for="del2">Вартість доставки <b>65 грн</b></label>
+                                                        </div>
+                                                        <a href="" class="btn">Далі</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

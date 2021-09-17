@@ -395,6 +395,43 @@
         }
     }
 }
+.new-box {
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 30/16;
+    font-weight: 300;
+    color: #543129;
+    margin-bottom: 50px;
+    .new-photo {
+        float: left;
+        width: 49%;
+        margin: 0 28px 20px 0;
+        display: block;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    h2, h3 {
+        display: block;
+        font-size: 24px;
+        line-height: 30/24;
+        font-weight: bold;
+        color: #543129;
+        margin: 0 0 5px 0;
+        text-transform: none;
+        &+p {
+            margin-top: 24px;
+        }
+    }
+    .new-date {
+        font-weight: bold;
+        margin: 0 0 10px 0;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
 .news-box {
     margin-bottom: 40px;
     margin-bottom: 0;
@@ -1282,6 +1319,11 @@
             }
         }
     }
+    .frm-text {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #543029;
+    }
     .frm-help,
     .frm-help-second {
         padding-left: 10px;
@@ -1846,7 +1888,7 @@
         }
     }
     .elm-tag {
-        margin: 0 20px;
+        margin: 0 12px;
     }
 }
 .main-slider-box {
@@ -1876,6 +1918,20 @@
     }
 }
 @media (max-width: 1023px) {
+    .new-box {
+        .new-photo {
+            width: 40%;
+        }
+    }
+    .card-tabs-wrap {
+        a {
+            font-size: 16px;
+            .button-ico {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
     .filter-show {
         .filter-box {
             display: block;
@@ -2241,6 +2297,13 @@
     }
 }
 @media (max-width: 767px) {
+
+    .new-box {
+        .new-photo {
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
+    }
     .order-main-box {
         table {
             th, td {

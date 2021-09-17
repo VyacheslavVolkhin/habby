@@ -78,6 +78,24 @@ html {
 .header {
     z-index: 99;
 }
+.header-main-panel {
+    .action-lang {
+        position: relative;
+        .action-block {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: -18px;
+            .btn-action-lang {
+                .button-title {
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
 .footer {
     overflow: hidden;
     background: #543029;
@@ -548,10 +566,10 @@ html {
             display: none;
         }
         .search-wrap {
-            width: 48px;
+            width: 55px;
         }
         .phone-wrap {
-            width: 48px;
+            width: 55px;
         }
         .search-block {
             display: none;
@@ -604,6 +622,9 @@ html {
         .btn-action-ico {
             width: 55px;
             height: 48px;
+        }
+        .btn-action-lang {
+            width: 55px;
         }
     }
     .header-nav-panel {
