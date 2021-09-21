@@ -1,6 +1,20 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.main-map-box {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+    background: #f0f0f0;
+    &>ymaps {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
 .popup-box {
     color: #000000;
     &.fancybox-content {
@@ -1121,6 +1135,14 @@
 }
 .lk-auth-box {
     margin-bottom: 30px;
+    .lk-form-box {
+        .frm-row-submit {
+            display: block;
+            .btn.button-clear-form {
+                color: #543029;
+            }
+        }
+    }
     .form-wrap {
         margin-bottom: 65px;
     }
@@ -1501,6 +1523,37 @@
     padding: 15px 20px 30px 20px;
     display: block;
     position: relative;
+}
+.contacts-box {
+    display: flex;
+    margin-bottom: 70px;
+    .form-wrap {
+        width: 562px;
+        flex-shrink: 0;
+    }
+    .text-wrap {
+        font-size: 16px;
+        line-height: 26/16;
+        flex: 1;
+        padding-top: 10px;
+        padding-right: 40px;
+        color: #b37542;
+        a {
+            color: #b37542;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .cnt-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #543029;
+        margin:  0.6em 0 0 0;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
 }
 .order-user-box {
     padding: 20px 10px 30px 10px;
@@ -1942,6 +1995,20 @@
     }
 }
 @media (max-width: 1023px) {
+    .main-map-box {
+        height: 300px;
+    }
+    .contacts-box {
+        display: block;
+        .text-wrap {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        .form-wrap {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
     .new-box {
         .new-photo {
             width: 40%;

@@ -24,20 +24,49 @@
 				
 				<!--lk-auth-box-->
 				<div class="lk-auth-box">
-					<h1 class="page-title">Вхід в кабінет покупця</h1>
+					<h1 class="page-title">Реєстрація</h1>
 					<div class="lk-inner-wrap">
 						<!--form-wrap-->
-						<div class="form-wrap">
+						<div class="form-wrap lk-form-box">
 							<div class="frm-row">
-								<input type="text" placeholder="Телефон або email*">
+								<div class="field-input-wrap">
+									<div class="frm-field-input js-input">
+										<input type="text" value="Марія" class="field-input">
+										<label>Ім'я <span class="frm-req">*</span></label>
+									</div>
+								</div>
 							</div>
 							<div class="frm-row">
-								<input type="text" placeholder="Пароль*">
+								<div class="field-input-wrap">
+									<div class="frm-field-input js-input">
+										<input type="text" value="Куда" class="field-input">
+										<label>Прізвище <span class="frm-req">*</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="frm-row">
+								<div class="field-input-wrap">
+									<div class="frm-field-input js-input">
+										<input type="tel" value="+38 (066) 926-88-67" class="field-input">
+										<label>Телефон для зв’язку <span class="frm-req">*</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="frm-row">
+								<div class="field-input-wrap">
+									<div class="frm-field-input js-input">
+										<input type="text" value="boungorno@gmail.com" class="field-input">
+										<label>Електронна пошта <span class="frm-req">*</span></label>
+									</div>
+								</div>
 							</div>
 							<div class="frm-row-submit">
-								<input type="submit" value="Увійти" class="button-light">
-								<a href="cab03-01.html" class="btn button-light button-clear-form">Відновити пароль</a>
-								<a href="cab03-02.html" class="btn button-light button-clear-form">Зареєструватися</a>
+								<div class="frm-select">
+									<input type="checkbox" id="cab01">
+									<label for="cab01">Я приймаю умови угоди</label>
+								</div>
+								<input type="submit" value="Зареєструвати">
+								<a href="cab03.html" class="btn button-light button-clear-form">В мене вже є аккаунт</a>
 							</div>
 						</div>
 						<!--/form-wrap-->
