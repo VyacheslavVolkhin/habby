@@ -164,8 +164,8 @@ $(document).ready(function(){
         }
         return false;
     })
-    
-    
+
+
     //item-video
     $('.js-btn-video').on('click', function () {
         let videoURL = $(this).parent('.item-video').attr('data-video');
